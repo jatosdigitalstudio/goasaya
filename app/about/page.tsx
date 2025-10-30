@@ -1,5 +1,5 @@
 import Head from "../head";
-
+import AboutPage from "@/components/pages/AboutPage";
 
 export default function About() {
   return (
@@ -11,9 +11,8 @@ export default function About() {
             keywords="Asian fine dining concept, restaurant story, cave design restaurant, luxury dining story, fine dining philosophy, GOASAYA culinary journey"
             image="https://www.goasaya.com/logo/09.jpg"
         />
-        <div className="py-34">
-            <h1 className="text-4xl text-center font-style">ABOUT GOASAYA</h1>
-        </div>
+
+        <AboutPage/>
     </>
   );
 }

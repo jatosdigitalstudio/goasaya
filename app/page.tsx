@@ -1,7 +1,7 @@
 import Head from "./head";
 import HeroSection from "@/components/sections/HeroSection";
 import AboutSection from "@/components/sections/AboutSection";
-
+import EventSection from "@/components/sections/EventSection";
 
 export default function Home() {
   return (
@@ -16,6 +16,7 @@ export default function Home() {
 
       <HeroSection/>
       <AboutSection/>
+      <EventSection/>
     </>
   );
 }

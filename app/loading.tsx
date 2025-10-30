@@ -5,7 +5,7 @@ export default function Loading() {
       <div className="flex h-screen items-center bg-maroon justify-center z-10!important">
         <div className="flex flex-col justify-center items-center gap-4">
           <div className="loader z-20!important">
-            <Image src="/logo/09.jpg" width={150} height={150} alt="Logo 7Sundays Network"/>
+            <Image src="/logo/LogotypeIcon-01.png" width={150} height={150} alt="Logo 7Sundays Network"/>
           </div>
         </div>
       </div>

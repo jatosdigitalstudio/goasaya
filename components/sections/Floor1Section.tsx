@@ -1,0 +1,90 @@
+"use client";
+
+import { motion} from "framer-motion";
+import Image from "next/image";
+import Link from "next/link";
+
+export default function Floor1Section() {
+    const images = [
+        { src: "/images/goalt1-2.jpg", span: "col-span-2" },
+        { src: "/images/goalt1-3.jpg", span: "col-span-1" },
+        { src: "/images/goalt1-5.jpg", span: "col-span-1" },
+        { src: "/images/goalt1-4.jpg", span: "col-span-1" },
+    ];
+    return (
+        <section className="w-full bg-black text-white overflow-hidden">
+            <div className="relative container mx-auto px-6 md:px-14 py-30">
+                {/* Header Content */}
+                <div className="flex flex-col md:flex-row justify-between items-start mb-20 md:items-center">
+                    <motion.h1
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.8 }}
+                        className="text-lg md:text-2xl font-style leading-tight max-w-4xl"
+                    >
+                        DISCOVER THE FLAVORS OF ADVENTURE AT CAVE, A NATURE-INSPIRED RESTO BAR WHERE FLAME-GRILLED DISHES, 
+                        SIGNATURE DRINKS, AND WARM, CAVE-LIKE INTERIORS CREATE ONE UNFORGETTABLE DINING EXPERIENCE.
+                    </motion.h1>
+
+                    <motion.div
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 1 }}
+                        className="mt-8 md:mt-0 md:text-right max-w-xs md:max-w-sm text-gray-300"
+                    >
+                        <h1 className="font-style text-7xl mb-4">
+                        1ST Floor
+                        </h1>
+                        <Link href="/reservation" className="text-sm font-medium border-b border-gray-500 hover:border-white transition-all duration-300">
+                            <Image
+                                src="/images/reservewhite.png"
+                                alt="GOASAYA Reservation"
+                                width={300}
+                                height={300}
+                            />
+                        </Link>
+                    </motion.div>
+                </div>
+
+                <motion.div
+                    initial={{ opacity: 0, x: 30 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 0.8 }}
+                    viewport={{ once: true }}
+                    className="flex justify-end"
+                    >
+                    <div className="max-w-3xl text-right mb-16">
+                        <p className="text-sm text-white font-text leading-loose">Step into a world where raw elegance meets refined taste. The first floor of GoaSaya is a luxurious restaurant carved to evoke the timeless beauty of a natural cave — a sanctuary where rough stone walls, ambient lighting, and organic textures create an atmosphere of intimate grandeur. Here, every detail is crafted to elevate your senses, from the sculpted dining alcoves to the soft, golden glow that dances across the mineral-rich surfaces.</p>
+                    </div>
+                </motion.div>
+
+                <motion.div
+                    initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1 }}
+                    transition={{ duration: 1.2 }}
+                    viewport={{ once: true }}
+                    className="grid grid-cols-2 md:grid-cols-3 gap-2 md:gap-3"
+                >
+                    {images.map((img, i) => (
+                    <motion.div
+                        key={i}
+                        initial={{ opacity: 0, scale: 0.95, y: 20 }}
+                        whileInView={{ opacity: 1, scale: 1, y: 0 }}
+                        transition={{ delay: i * 0.2, duration: 0.6 }}
+                        viewport={{ once: true }}
+                        className={`${i === 0 ? "md:col-span-3" : "md:col-span-1"} col-span-2 relative w-full h-[300px] md:h-[500px] overflow-hidden`}
+                    >
+                        <Image
+                        src={img.src}
+                        alt={`Goasaya interior ${i + 1}`}
+                        fill
+                        sizes="(max-width: 768px) 100vw, 50vw"
+                        className="object-cover brightness-95 hover:brightness-110 transition-all duration-700"
+                        />
+                    </motion.div>
+                    ))}
+                </motion.div>
+            </div>
+        </section>
+    );
+}

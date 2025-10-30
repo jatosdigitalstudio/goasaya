@@ -1,5 +1,6 @@
 import Head from "../head";
-
+import Floor1Section from "@/components/sections/Floor1Section";
+import Floor2Section from "@/components/sections/Floor2Section";
 export default function Experience() {
   return (
     <>
@@ -10,10 +11,8 @@ export default function Experience() {
             keywords="Asian tasting menu, immersive dining experience, luxury restaurant interior, progressive Asian cuisine, cave restaurant design, fine dining tasting experience"
             image="https://www.goasaya.com/logo/09.jpg"
         />
-
-        <div className="py-34">
-            <h1 className="text-4xl text-center font-style">GOASAYA EXPERIENCE</h1>
-        </div>
+        <Floor1Section/>
+        <Floor2Section/>
     </>
   );
 }

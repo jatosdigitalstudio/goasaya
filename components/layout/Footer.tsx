@@ -10,8 +10,19 @@ export default function Footer() {
     ];
     
     return (
-      <footer className="bg-maroon text-white py-8 px-6 md:py-12" id="contact">
-        <div className="container mx-auto px-2 md:px-4">
+      <footer className="relative bg-maroon text-white py-8 px-6 md:py-12" id="contact">
+        <div className="absolute inset-0">
+            <Image
+                src="/images/footer-goa.png"
+                alt="Asian dining background"
+                fill
+                priority
+                className="object-cover object-center brightness-75"
+            />
+            {/* Overlay */}
+            <div className="absolute inset-0 bg-maroon/85"></div>
+        </div>
+        <div className="relative container mx-auto px-2 md:px-4">
             <div className="flex flex-col justify-center items-center mb-12 font-text">
                 <Link href="/">
                     <Image src="/logo/LogotypeIcon-01.png" alt='Logo Goasaya' width={200} height={200} />
@@ -21,7 +32,7 @@ export default function Footer() {
                     <div className="flex space-x-8">
                         {navItems.map((item) => (
                         <div key={item.href}>
-                            <Link href={item.href} className="font-reguler transition-colors hover-underline-animation">
+                            <Link href={item.href} scroll className="font-reguler transition-colors hover-underline-animation">
                             {item.name}
                             </Link>
                         </div>
@@ -29,7 +40,7 @@ export default function Footer() {
                     </div>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mt-12">
                     <div className="flex flex-col">
                        <span>Tuesday - Sunday</span>
                        <span>Entertainment District, PIK 2</span>
