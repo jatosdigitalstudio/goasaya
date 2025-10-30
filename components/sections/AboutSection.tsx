@@ -49,7 +49,7 @@ export default function AboutSection() {
                         <h1 className="text-2xl md:text-3xl font-style mb-4 leading-normal uppercase">
                             The restaurant&apos;s kitchen and interior blending natural texture with bold, earthy flavors
                         </h1>
-                        <p className="font-text text-gray-300">
+                        <p className="font-text text-gray-300 leading-relaxed">
                             Inspired by nature quite strength, cave surround you with stone, wood and soft lighting — creating a space 
                             that feels both grounding and inviting. Our kitchen bring that same energy to every dish, with fire grilled
                             flavors, hearty ingredients, and a touch of rustic charm. It&apos;s a place to feel at home, deep in the heart of

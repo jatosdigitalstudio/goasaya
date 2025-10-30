@@ -5,11 +5,11 @@ import Image from "next/image";
 import VisionSection from "../sections/VisionSection";
 import GroupSection from "../sections/GroupSection";
 
-export default function AboutPage() {
+export default function MenuPage() {
     return (
         <section className="relative w-full bg-cream text-maroon overflow-hidden">
             <div className="relative container mx-auto px-6 md:px-14 pt-14 md:pt-42 pb-16">
-                <div className="flex flex-col md:flex-row justify-evenly items-start mb-20 ">
+                <div className="flex flex-col md:flex-row justify-between items-start mb-20 ">
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
@@ -20,21 +20,15 @@ export default function AboutPage() {
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 1 }}
-                            className="mt-8 md:mt-0 max-w-md text-gray-300"
+                            className="mt-8 md:mt-0 text-gray-300"
                         >
-                            <Image
-                                src="/images/about-goa.webp"
-                                alt="About GOASAYA"
-                                width={400}
-                                height={400}
-                                className="mb-6"
-                            />
-                            <Image
+                           <h1 className="text-6xl text-maroon font-style">MENU at GOASAYA</h1>
+                            {/* <Image
                                 src="/images/goalt1-6.jpg"
                                 alt="Goasaya Ambience"
                                 width={400}
                                 height={400}
-                            />
+                            /> */}
                         </motion.div>
                     </motion.div>
                     <motion.div
@@ -56,8 +50,6 @@ export default function AboutPage() {
                     </motion.div>
                 </div>
             </div>
-            <VisionSection/>
-            <GroupSection/>
         </section>
     );
 }

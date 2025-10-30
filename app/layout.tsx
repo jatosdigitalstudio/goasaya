@@ -7,6 +7,7 @@ import "@/styles/globals.css";
 import Header from "@/components/layout/Header";
 import Footer from '@/components/layout/Footer';
 import Loading from './loading';
+import ScrollToTop from '@/components/ui/ScrollToTop';
 
 const textFont = Inria_Serif({
   variable: "--font-text",
@@ -39,6 +40,7 @@ export default function RootLayout({
         {loading ? <Loading/> : (
           <>
             <Header />
+            <ScrollToTop />
             <main>{children}</main>
             <Footer />
           </>

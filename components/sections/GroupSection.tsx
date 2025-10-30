@@ -26,12 +26,14 @@ export default function GroupSection() {
                         className=" max-w-lg"
                     >
                         <h1 className="text-center text-md font-text mb-8"> Holding Company by</h1>
-                        <Image
+                        <Link href="https://www.sayagroup.id" target="_blank" rel="noreferrer">
+                          <Image
                             src="/logo/sayagroup.webp"
                             alt="Logo SAYAGROUP"
                             width={300}
                             height={300}
-                        />
+                            />
+                        </Link>
                     </motion.div>
 
                     {/* <motion.div

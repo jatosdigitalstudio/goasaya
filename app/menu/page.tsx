@@ -1,5 +1,5 @@
 import Head from "../head";
-
+import MenuPage from "@/components/pages/MenuPage";
 export default function Menu() {
   return (
     <>
@@ -11,9 +11,7 @@ export default function Menu() {
             image="https://www.goasaya.com/logo/09.jpg"
         />
 
-         <div className="py-34">
-            <h1 className="text-4xl text-center font-style">MENU at GOASAYA</h1>
-        </div>
+        <MenuPage/>
     </>
   );
 }
