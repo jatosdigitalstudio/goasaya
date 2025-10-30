@@ -22,15 +22,16 @@ export default function ReservationForm() {
     e.preventDefault();
     console.log("Reservation Submitted:", form);
 
-    const message = `
+    const message = 
+        `
         *New Reservation Request - GOASAYA*
         -------------------------------------
-        👤 Name: ${form.name}
-        📞 Phone: ${form.phone}
-        📅 Date: ${form.date}
-        ⏰ Time: ${form.time}
-        🚬 Smoking Area: ${form.smoking}
-        👥 Pax: ${form.pax}
+        Name: ${form.name}
+        Phone: ${form.phone}
+        Date: ${form.date}
+        Time: ${form.time}
+        Smoking Area: ${form.smoking}
+        Pax: ${form.pax}
         -------------------------------------
         Please confirm my reservation.
         `;

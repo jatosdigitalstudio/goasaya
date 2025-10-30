@@ -40,7 +40,7 @@ export default function Header() {
           animate={{ scale: 1 }}
           transition={{ duration: 0.6, ease: "backOut" }}
         >
-          <Link href="/">
+          <Link href="/" onClick={() => setMenuOpen(false)}>
             <Image
               src="/logo/Logotype-01.png"
               alt="Logo Goasaya"
@@ -107,6 +107,7 @@ export default function Header() {
             <Link
                 href="/reservation"
                 className="font-style text-sm bg-orangecream px-6 py-2 text-black hover:bg-maroon hover:text-white transition"
+                onClick={() => setMenuOpen(false)}
             >
               Book a table
             </Link>

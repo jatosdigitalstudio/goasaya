@@ -12,7 +12,7 @@ export default function Experience() {
         />
 
         <div className="py-34">
-            <h1 className="text-7xl text-center font-style">GOASAYA EXPERIENCE</h1>
+            <h1 className="text-4xl text-center font-style">GOASAYA EXPERIENCE</h1>
         </div>
     </>
   );
