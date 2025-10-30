@@ -2,12 +2,10 @@
 
 import { motion} from "framer-motion";
 import Image from "next/image";
-import Link from "next/link";
 
 export default function AboutSection() {
     return (
         <section className="relative md:h-screen w-full text-white overflow-hidden">
-            {/* Background Image + Overlay */}
             <div className="absolute inset-0">
                 <Image
                 src="/images/Japanese_Theme_Karaoke_3.jpg"
@@ -16,13 +14,10 @@ export default function AboutSection() {
                 priority
                 className="object-cover object-center brightness-75"
                 />
-                {/* Overlay */}
                 <div className="absolute inset-0 bg-maroon/75"></div>
             </div>
 
-            {/* Content */}
             <div className="relative container mx-auto px-6 md:px-14 py-30">
-                {/* Header Content */}
                 <div className="flex flex-col md:flex-row justify-between items-start mb-20 ">
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}
@@ -79,7 +74,6 @@ export default function AboutSection() {
                     </motion.div>
                 </div>
             </div>
-            </section>
-
+        </section>
     );
 }

@@ -32,47 +32,61 @@ export default function Footer() {
                     </div>
                 </div> */}
 
-                <div className="grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-16 mt-12">
-                    <div className="flex flex-col justify-start items-center">
+                <div className="relative grid grid-cols-1 md:grid-cols-4 gap-12 md:gap-16 mt-12">
+                    <div className="hidden md:block absolute inset-y-0 left-1/4 w-px bg-gradient-to-b from-transparent via-white/80 to-transparent"></div>
+                    <div className="hidden md:block absolute inset-y-0 left-1/2 w-px bg-gradient-to-b from-transparent via-white/80 to-transparent"></div>
+                    <div className="hidden md:block absolute inset-y-0 left-3/4 w-px bg-gradient-to-b from-transparent via-white/80 to-transparent"></div>
+
+                    <div className="flex flex-col justify-start items-center text-center">
                         <h1 className="font-style text-lg mb-6">Get In Touch</h1>
                         <div className="flex flex-col text-left text-sm">
-                            <span>T. +62 813 3838 2845</span>
-                            <span>M. marketing@sayagroup.id</span>
+                        <span>T. +62 813 3838 2845</span>
+                        <span>M. marketing@sayagroup.id</span>
                         </div>
                     </div>
-                    <div className="flex flex-col justify-start items-center">
+
+                    <div className="flex flex-col justify-start items-center text-center">
                         <h1 className="font-style text-lg mb-6">Address</h1>
                         <div className="flex flex-col text-left text-sm">
-                            <span>Entertainment District, PIK 2</span>
+                        <span>Entertainment District, PIK 2</span>
                         </div>
                     </div>
-                    <div className="flex flex-col justify-start items-center">
+
+                    <div className="flex flex-col justify-start items-center text-center">
                         <h1 className="font-style text-lg mb-6">Opening Hours</h1>
                         <div className="flex flex-col text-left text-sm">
-                            <span>Tuesday - Sunday</span>
-                            <span>11:00 AM - 00:00 AM</span>
+                        <span>Tuesday - Sunday</span>
+                        <span>11:00 AM - 00:00 AM</span>
                         </div>
                     </div>
-                    <div className="flex flex-col justify-start items-center">
+
+                    <div className="flex flex-col justify-start items-center text-center">
                         <h1 className="font-style text-lg mb-6">Social Media</h1>
-                       
-                         <div className="flex flex-row items-start mb-6 gap-4">
-                            <Link aria-label="instagram" href="https://www.instagram.com/goasaya.jkt">
-                                <Image
-                                    src="/images/icon-ig.webp"
-                                    alt="Instagram Goasaya"
-                                    width={30}
-                                    height={30}
-                                />
-                            </Link>
-                            <Link aria-label="tiktok" href="www.tiktok.com/goasaya.jkt">
-                                <Image
-                                    src="/images/icon-tt.webp"
-                                    alt="Tiktok Goasaya"
-                                    width={30}
-                                    height={30}
-                                />
-                            </Link>
+                        <div className="flex flex-row items-start mb-6 gap-4">
+                        <Link
+                            aria-label="instagram"
+                            href="https://www.instagram.com/goasaya.jkt"
+                            target="_blank"
+                        >
+                            <Image
+                            src="/images/icon-ig.webp"
+                            alt="Instagram Goasaya"
+                            width={30}
+                            height={30}
+                            />
+                        </Link>
+                        <Link
+                            aria-label="tiktok"
+                            href="https://www.tiktok.com/@goasaya.jkt"
+                            target="_blank"
+                        >
+                            <Image
+                            src="/images/icon-tt.webp"
+                            alt="Tiktok Goasaya"
+                            width={30}
+                            height={30}
+                            />
+                        </Link>
                         </div>
                     </div>
                 </div>

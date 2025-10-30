@@ -7,8 +7,7 @@ import Link from "next/link";
 export default function HeroSection() {
     return (
         <section className="h-screen w-full bg-black text-white overflow-hidden">
-            <div className="container mx-auto px-6 md:px-14 py-30  relative">
-                {/* Header Content */}
+            <div className="relative container mx-auto px-6 md:px-14 py-30  ">
                 <div className="flex flex-col md:flex-row justify-between items-start mb-20 md:items-center">
                     <motion.h1
                         initial={{ opacity: 0, y: 20 }}
@@ -35,7 +34,7 @@ export default function HeroSection() {
                         </Link>
                     </motion.div>
                 </div>
-                {/* Image Strip */}
+
                 <motion.div
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}

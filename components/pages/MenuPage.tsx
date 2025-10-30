@@ -31,7 +31,7 @@ export default function MenuPage() {
                             /> */}
                         </motion.div>
                     </motion.div>
-                    <motion.div
+                    {/* <motion.div
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 1 }}
@@ -47,7 +47,7 @@ export default function MenuPage() {
                             width={600}
                             height={500}
                         />
-                    </motion.div>
+                    </motion.div> */}
                 </div>
             </div>
         </section>

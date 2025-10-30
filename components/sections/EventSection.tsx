@@ -10,25 +10,32 @@ export default function EventsSection() {
 
   return (
     <section className="bg-cream text-black py-24 px-6 md:px-16 overflow-hidden">
-      <motion.div
-        initial={{ opacity: 0, y: 40 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8 }}
-        viewport={{ once: true }}
-        className="text-left mb-14"
-      >
-        <h2 className="text-maroon uppercase text-3xl md:text-4xl font-style mb-4">
-          Discover Experiences Beyond Dining
-        </h2>
-        <p className="text-black max-w-2xl font-text md:text-md leading-relaxed">
-          At GoaSaya, every evening tells a story — from intimate jazz nights
-          beneath golden light, to vibrant mixology showcases in our cave bar.
-          Indulge in moments crafted for those who seek more than a meal — an
-          experience.
-        </p>
-      </motion.div>
+        <div className="flex flex-col md:flex-row justify-between items-start mb-12 md:mb-32 md:items-center">
+            <motion.h1
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8 }}
+                className="text-maroon text-4xl md:text-6xl font-style leading-tight max-w-2xl"
+            >
+                Discover Experiences Beyond Dining
+            </motion.h1>
 
-        <div className="grid md:grid-cols-4 gap-8 max-w-7xl">
+            <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 1 }}
+                className="mt-8 md:mt-0 md:text-right max-w-md text-black"
+            >
+                <p className="font-text text-md mb-4">
+                    At GoaSaya, every evening tells a story — from intimate jazz nights
+                    beneath golden light, to vibrant mixology showcases in our cave bar.
+                    Indulge in moments crafted for those who seek more than a meal — an
+                    experience.
+                </p>
+            </motion.div>
+        </div>
+
+        <div className="grid md:grid-cols-4 gap-8">
             {latestEvents.map((event, idx) => (
             <motion.div
                 key={idx}
@@ -48,10 +55,10 @@ export default function EventsSection() {
                 <Link href={`/events/${event.slug}`} className="w-full group">
                 <div className="relative w-full h-[400px] overflow-hidden">
                     <Image
-                    src={event.image}
-                    alt={event.title}
-                    fill
-                    className="object-cover duration-700 brightness-90 "
+                        src={event.image}
+                        alt={event.title}
+                        fill
+                        className="object-cover duration-700 brightness-90"
                     />
                 </div>
                 <h3 className="mt-6 text-xl font-semibold font-style">
