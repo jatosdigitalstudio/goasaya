@@ -21,6 +21,33 @@ const styeFont = localFont({
   variable: '--font-style'
 })
 
+export const metadata = {
+  title: "GOASAYA | Asian Progressive Dining Experience",
+  description:"Discovered the flavors of adventures at cave, where grilled dishes, unique drinks, and cozy cave vibes come together in one unforgetables experience",
+  openGraph: {
+    title: "GOASAYA | Asian Progressive Dining Experience",
+    description:"Discovered the flavors of adventures at cave, where grilled dishes, unique drinks, and cozy cave vibes come together in one unforgetables experience",
+    url: "https://goasaya.com",
+    siteName: "GoaSaya",
+    images: [
+      {
+        url: "/logo/09.jpg",
+        width: 500,
+        height: 500,
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "GOASAYA | Asian Progressive Dining Experience",
+    description:
+      "Discovered the flavors of adventures at cave, where grilled dishes, unique drinks, and cozy cave vibes come together in one unforgetables experience",
+    images: ["/logo/09.jpg"],
+  },
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
