@@ -29,16 +29,6 @@ export default function AboutSection() {
             viewport={{ once: true }}
             className="mt-8 md:mt-0 max-w-sm text-gray-300"
           >
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.7, delay: 0.2 }}
-              viewport={{ once: true }}
-              className="font-text text-lg md:text-xl uppercase italic mb-4 md:mb-8"
-            >
-              grand canyon atmosphere
-            </motion.p>
-
             <motion.div
               initial={{ opacity: 0, scale: 0.95 }}
               whileInView={{ opacity: 1, scale: 1 }}
