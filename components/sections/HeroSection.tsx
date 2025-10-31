@@ -122,7 +122,7 @@ export default function HeroSection() {
             animate={{ x: ["0%", "-50%"] }}
             transition={{
                 ease: "linear",
-                duration: 10,
+                duration: 25,
                 repeat: Infinity,
             }}
             // important: prevent wrapping and ensure GPU-accelerated transform

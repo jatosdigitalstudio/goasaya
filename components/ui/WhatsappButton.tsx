@@ -39,7 +39,7 @@ const WhatsappButton = () => {
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: isVisible ? 1 : 0, scale: isVisible ? 1 : 0.8 }}
             transition={{ duration: 0.4 }}
-            className="fixed bottom-4 right-4 md:bottom-8 md:right-8 z-99"
+            className="fixed bottom-4 right-4 md:bottom-6 md:right-6 z-99"
             >
             {isVisible && (
                 <Link 
@@ -50,13 +50,13 @@ const WhatsappButton = () => {
                     <motion.button
                         onClick={scrollToTop}
                         aria-label="Back to top"
-                        className='flex flex-row gap-4 justify-center items-center bg-cream border border-maroon p-2 cursor-pointer rounded-md'
+                        className='flex flex-row gap-4 justify-center items-center cursor-pointer'
                     >
                         <Image
-                            src="/images/icon-wa.png"
+                            src="/images/icon-wa-btn.png"
                             alt="Whatsapp GOASAYA"
-                            width={30}
-                            height={30}
+                            width={50}
+                            height={50}
                         />
                         {/* <span className='hidden md:flex leading-[0.6] text-sm text-black'>Book a Table</span> */}
                     </motion.button>

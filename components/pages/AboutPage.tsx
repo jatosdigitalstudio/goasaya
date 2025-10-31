@@ -41,7 +41,7 @@ export default function AboutPage() {
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 1 }}
-                        className="mt-8 md:mt-0 max-w-xl text-maroon"
+                        className="mt-8 md:mt-0 max-w-xl text-black"
                     >
                         <p className="font-text text-lg mb-4 md:mb-12">
                             In a world where people rush from place to place, we imagined something different. A space where time slows down. Where people can arrive for a meal, stay for the drinks, and lose themselves in the music and connection. A sanctuary carved from stone, sound, and sensation of the experience deepens with every floor you descend.
