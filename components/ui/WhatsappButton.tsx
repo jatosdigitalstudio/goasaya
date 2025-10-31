@@ -39,7 +39,7 @@ const WhatsappButton = () => {
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: isVisible ? 1 : 0, scale: isVisible ? 1 : 0.8 }}
             transition={{ duration: 0.4 }}
-            className="fixed bottom-8 right-8 z-99"
+            className="fixed bottom-4 right-4 md:bottom-8 md:right-8 z-99"
             >
             {isVisible && (
                 <Link 
