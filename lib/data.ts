@@ -6,70 +6,41 @@ export interface EventType {
   time: string;
   desc: string;
 }
-
-export const EVENTS: EventType[] = [
+export const EVENTS = [
   {
-    title: "Mystic Jazz Evening",
-    slug: "mystic-jazz-evening",
-    image: "/images/goa5.jpg",
-    date: "Friday, Nov 15",
-    time: "8:00 PM – 11:00 PM",
-    desc: "Live tunes echo through the stone walls, an invitation to unwind with rhythm and elegance.",
+    title: "THE UNVEILING — Cutting Ribbon Ceremony",
+    slug: "the-unveiling-cutting-ribbon",
+    date: "Tuesday, 11 November 2025",
+    time: "11:00 AM",
+    image: "/events/unveiling.JPG",
+    desc: `Join us for the grand unveiling of GoaSaya — where modern design meets the timeless allure of nature. 
+    Experience the ceremonial ribbon cutting, a toast to new beginnings, and a first glimpse into our cave-inspired dining sanctuary.`,
   },
   {
-    title: "The Art of Mixology",
-    slug: "the-art-of-mixology",
-    image: "/images/goa6.jpg",
-    date: "Saturday, Nov 23",
-    time: "7:30 PM – 10:00 PM",
-    desc: "Sip, stir, and savor as our bartenders reveal the secret alchemy behind signature cocktails.",
+    title: "A NIGHT OF CLOUD — Shisha Night",
+    slug: "a-night-of-cloud-shisha-night",
+    date: "Thursday, 13 November 2025",
+    time: "From 19:00",
+    image: "/events/shisa.JPG",
+    desc: `Sink into an ethereal evening surrounded by ambient lights, soft beats, and the rich aroma of premium shisha. 
+    Let the clouds swirl as you enjoy crafted cocktails and soulful lounge tunes — an experience of calm indulgence beneath the cave glow.`,
   },
   {
-    title: "Chef’s Table: Fire & Stone",
-    slug: "chefs-table-fire-stone",
-    image: "/images/goa4.jpg",
-    date: "Sunday, Dec 1",
-    time: "6:00 PM – 9:00 PM",
-    desc: "An exclusive tasting menu inspired by the primal elements flame, earth, and sea.",
+    title: "CAVE PARTY — DJ Session",
+    slug: "cave-party-dj-session",
+    date: "Friday, 14 November 2025",
+    time: "From 19:00",
+    image: "/events/party.jpg",
+    desc: `Lose yourself in the rhythm of the cave. Our resident DJs bring a night of high energy and deep grooves — 
+    blending house, techno, and tribal beats in a one-of-a-kind underground atmosphere. Dance, drink, and celebrate the night.`,
   },
-//   {
-//     title: "Twilight Wine Ritual",
-//     slug: "twilight-wine-ritual",
-//     image: "/images/goa7.jpg",
-//     date: "Friday, Dec 6",
-//     time: "7:00 PM – 10:30 PM",
-//     desc: "As dusk settles over the ancient stones, indulge in a guided wine journey featuring rare vintages paired with artisanal small plates. Each pour tells a story — a ritual of taste, scent, and slow discovery.",
-//   },
-//   {
-//     title: "Moonlit Acoustic Session",
-//     slug: "moonlit-acoustic-session",
-//     image: "/images/goa8.jpg",
-//     date: "Saturday, Dec 14",
-//     time: "8:30 PM – 11:00 PM",
-//     desc: "Under the soft glow of candlelight, intimate acoustic sets bring warmth to the cool night air. Let melodies drift through the archways as local artists perform soul-soothing renditions in an ethereal setting.",
-//   },
-//   {
-//     title: "Supper Beneath the Stars",
-//     slug: "supper-beneath-the-stars",
-//     image: "/images/goa9.jpg",
-//     date: "Friday, Dec 20",
-//     time: "7:00 PM – 10:00 PM",
-//     desc: "A celestial dining experience set in GOASAYA’s open courtyard. Guests share a communal table under the night sky, where each course is paired with storytelling, ambient lighting, and sounds of the forest.",
-//   },
-//   {
-//     title: "Aroma of Earth — Coffee & Cacao Workshop",
-//     slug: "aroma-of-earth",
-//     image: "/images/goa10.jpg",
-//     date: "Sunday, Dec 22",
-//     time: "3:00 PM – 6:00 PM",
-//     desc: "Explore the deep sensory world of coffee and cacao. From roasting to tasting, uncover how aroma, soil, and ritual merge into a single moment of presence — guided by GOASAYA’s resident roasters and chocolatiers.",
-//   },
-//   {
-//     title: "Echoes of Bali: Sound Healing Journey",
-//     slug: "echoes-of-bali-sound-healing",
-//     image: "/images/goa11.jpg",
-//     date: "Saturday, Jan 4",
-//     time: "5:00 PM – 7:30 PM",
-//     desc: "Immerse yourself in a meditative experience of gongs, crystal bowls, and ancient Balinese chants. The stone chambers resonate with frequency and calm, reconnecting body and mind in harmonic balance.",
-//   },
+  {
+    title: "THE JAZZ AFFAIR",
+    slug: "the-jazz-affair",
+    date: "Saturday, 15 November 2025",
+    time: "From 18:00",
+    image: "/events/cave.JPG",
+    desc: `A sophisticated night of smooth jazz and timeless elegance. 
+    Let live melodies fill the cavern’s heart as you enjoy curated dishes and fine wines — the perfect harmony of sound, flavor, and ambiance.`,
+  },
 ];

@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function AboutSection() {
   return (
-    <section className="relative md:h-screen w-full text-white overflow-hidden">
+    <section className="relative w-full text-white overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0">
         <Image
@@ -19,8 +19,8 @@ export default function AboutSection() {
       </div>
 
       {/* Content */}
-      <div className="relative container mx-auto px-6 md:px-14 py-30">
-        <div className="flex flex-col md:flex-row justify-between items-start mb-20">
+      <div className="relative container mx-auto px-6 md:px-14 py-24">
+        <div className="flex flex-col md:flex-row justify-between items-start">
           {/* Left Column */}
           <motion.div
             initial={{ opacity: 0, y: 50 }}
@@ -46,9 +46,9 @@ export default function AboutSection() {
               viewport={{ once: true }}
             >
               <Image
-                src="/images/goa6.jpg"
+                src="/images/goa8.JPG"
                 alt="Goasaya Ambience"
-                width={600}
+                width={400}
                 height={500}
                 className=" shadow-lg object-cover"
               />
