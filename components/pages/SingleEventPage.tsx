@@ -51,7 +51,7 @@ export default function SingleEventPage({ event }: EventProps) {
           <div className="pt-6 flex flex-col items-start gap-6">
             <Link
               href="/reservation"
-              className="inline-block bg-orange text-white px-8 py-3 hover:bg-black transition"
+              className="inline-block bg-orange rounded-md text-white px-8 py-3 hover:bg-black transition"
             >
               Reserve Your Seat
             </Link>

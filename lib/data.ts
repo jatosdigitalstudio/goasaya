@@ -14,7 +14,7 @@ export const EVENTS: EventType[] = [
     image: "/images/goa5.jpg",
     date: "Friday, Nov 15",
     time: "8:00 PM – 11:00 PM",
-    desc: "Live tunes echo through the stone walls — an invitation to unwind with rhythm and elegance.",
+    desc: "Live tunes echo through the stone walls, an invitation to unwind with rhythm and elegance.",
   },
   {
     title: "The Art of Mixology",

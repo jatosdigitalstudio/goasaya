@@ -37,32 +37,40 @@ export default function Footer() {
                     <div className="hidden md:block absolute inset-y-0 left-1/2 w-px bg-gradient-to-b from-transparent via-white/80 to-transparent"></div>
                     <div className="hidden md:block absolute inset-y-0 left-3/4 w-px bg-gradient-to-b from-transparent via-white/80 to-transparent"></div>
 
-                    <div className="flex flex-col justify-start items-center text-center">
+                    <div className="flex flex-col justify-center items-center text-center">
                         <h1 className="font-style text-lg mb-6">Get In Touch</h1>
-                        <div className="flex flex-col text-left text-sm">
-                        <span>T. +62 813 3838 2845</span>
-                        <span>M. marketing@sayagroup.id</span>
+                        <div className="flex flex-col text-center text-sm">
+                        <span>
+                            <Link href="tel:+6281338382845">
+                                +62 813 3838 2845
+                            </Link>
+                        </span>
+                        <span>
+                            <Link href="mailto:marketing@sayagroup.id">
+                                marketing@sayagroup.id
+                            </Link>
+                        </span>
                         </div>
                     </div>
 
                     <div className="flex flex-col justify-start items-center text-center">
                         <h1 className="font-style text-lg mb-6">Address</h1>
-                        <div className="flex flex-col text-left text-sm">
-                        <span>Entertainment District, PIK 2</span>
+                        <div className="flex flex-col text-center text-sm">
+                            <span className="text-center">Entertainment District, PIK 2</span>
                         </div>
                     </div>
 
                     <div className="flex flex-col justify-start items-center text-center">
                         <h1 className="font-style text-lg mb-6">Opening Hours</h1>
-                        <div className="flex flex-col text-left text-sm">
-                        <span>Tuesday - Sunday</span>
+                        <div className="flex flex-col text-center text-sm">
+                        <span className="font-bold">Tuesday - Sunday</span>
                         <span>11:00 AM - 00:00 AM</span>
                         </div>
                     </div>
 
                     <div className="flex flex-col justify-start items-center text-center">
                         <h1 className="font-style text-lg mb-6">Social Media</h1>
-                        <div className="flex flex-row items-start mb-6 gap-4">
+                        <div className="flex flex-row items-center mb-6 gap-4">
                         <Link
                             aria-label="instagram"
                             href="https://www.instagram.com/goasaya.jkt"

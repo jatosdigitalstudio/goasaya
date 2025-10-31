@@ -30,7 +30,7 @@ export default function CTASection() {
           </p>
           <Link
             href="/reservation"
-            className="inline-block bg-orangecream text-black px-10 py-4"
+            className="inline-block bg-orangecream rounded-md text-black px-10 py-4"
           >
             Reserve Your Experience
           </Link>

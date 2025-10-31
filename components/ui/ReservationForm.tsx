@@ -25,26 +25,25 @@ export default function ReservationForm() {
     const message = 
         `
         *New Reservation Request - GOASAYA*
-        -------------------------------------
+        -----------------------------------
         Name: ${form.name}
         Phone: ${form.phone}
         Date: ${form.date}
         Time: ${form.time}
         Smoking Area: ${form.smoking}
         Pax: ${form.pax}
-        -------------------------------------
+        -----------------------------------
         Please confirm my reservation.
         `;
 
-        // ✅ Replace with your WhatsApp number (use international format, e.g. 628123456789)
-        const phoneNumber = "6285717175912"; 
+        const phoneNumber = "6281338382846"; 
 
         const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
         window.open(whatsappURL, "_blank");
   };
 
   return (
-    <section className="bg-black/75 text-white py-20 px-6 md:px-12">
+    <section className="bg-black/75 rounded-md text-white py-20 px-6 md:px-12">
       <div className="max-w-xl mx-auto">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
@@ -62,7 +61,6 @@ export default function ReservationForm() {
           onSubmit={handleSubmit}
           className="space-y-6 font-text"
         >
-          {/* Name */}
           <div>
             <label className="block text-sm mb-2 text-gray-300">Name</label>
             <input
@@ -75,7 +73,6 @@ export default function ReservationForm() {
             />
           </div>
 
-          {/* Phone */}
           <div>
             <label className="block text-sm mb-2 text-gray-300">Phone Number</label>
             <input
@@ -88,7 +85,6 @@ export default function ReservationForm() {
             />
           </div>
 
-          {/* Date & Time */}
           <div className="flex flex-col md:flex-row gap-6">
             <div className="flex-1">
               <label className="block text-sm mb-2 text-gray-300">Date</label>
@@ -114,7 +110,6 @@ export default function ReservationForm() {
             </div>
           </div>
 
-          {/* Smoking or No Smoking */}
           <div>
             <label className="block text-sm mb-2 text-gray-300">Smoking Area</label>
             <select
@@ -125,10 +120,10 @@ export default function ReservationForm() {
             >
               <option value="No" className="text-black">No Smoking</option>
               <option value="Yes" className="text-black">Smoking</option>
+              <option value="E-Cig" className="text-black">E-Cigarette/Pods</option>
             </select>
           </div>
 
-          {/* Pax */}
           <div>
             <label className="block text-sm mb-2 text-gray-300">Pax</label>
             <input
@@ -142,13 +137,12 @@ export default function ReservationForm() {
             />
           </div>
 
-          {/* Submit */}
           <div className="pt-6 text-center">
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.97 }}
               type="submit"
-              className="bg-orangecream text-black px-10 py-3 rounded-none uppercase text-sm tracking-wider hover:bg-gray-200 transition-all"
+              className="bg-orangecream rounded-md text-black px-10 py-3 uppercase text-sm tracking-wider hover:bg-gray-200 transition-all"
             >
               Reserve Now
             </motion.button>

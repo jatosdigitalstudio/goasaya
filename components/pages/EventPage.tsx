@@ -47,7 +47,7 @@ export default function EventsPage() {
                 className="mt-8 md:mt-0 md:text-right max-w-md text-gray-300"
             >
                 <p className="font-text text-md mb-4">
-                    Within GOASAYA’s stone walls, every evening is a ritual — from
+                    Within GOASAYA’s stone walls, every evening is a ritual from
                     immersive jazz nights to mixology performances by torchlight.
                     Explore moments crafted for the senses.
                 </p>

@@ -9,7 +9,7 @@ import { Menu, X } from "lucide-react";
 const navLinks = [
   { name: "About", href: "/about" },
   { name: "Experience", href: "/experience" },
-  { name: "Menu", href: "/menu" },
+//   { name: "Menu", href: "/menu" },
   { name: "Events", href: "/events" },
 ];
 
@@ -59,7 +59,7 @@ export default function Header() {
           >
             <Link
               href="/reservation"
-              className="font-style text-sm bg-orangecream px-6 py-2 text-black hover:bg-maroon hover:text-white transition"
+              className="font-style rounded-md text-sm bg-orangecream px-6 py-2 text-black hover:bg-maroon hover:text-white transition"
             >
               Book a table
             </Link>

@@ -8,6 +8,7 @@ import Header from "@/components/layout/Header";
 import Footer from '@/components/layout/Footer';
 import Loading from './loading';
 import ScrollToTop from '@/components/ui/ScrollToTop';
+import WhatsappButton from '@/components/ui/WhatsappButton';
 
 const textFont = Inria_Serif({
   variable: "--font-text",
@@ -36,11 +37,12 @@ export default function RootLayout({
 
   return (
     <html lang="en">
-      <body className={`${textFont.variable} ${styeFont.variable} antialiased`}>
+      <body className={`${textFont.variable} ${styeFont.variable}`}>
         {loading ? <Loading/> : (
           <>
             <Header />
             <ScrollToTop />
+            <WhatsappButton/>
             <main>{children}</main>
             <Footer />
           </>
