@@ -115,7 +115,7 @@ const images = [
 
 export default function HeroSection() {
   return (
-    <section className="relative h-[90vh] md:h-screen w-full bg-black text-white overflow-hidden flex items-center">
+    <section className="relative h-screen w-full bg-black text-white overflow-hidden flex items-center">
         <div className="absolute inset-0 overflow-hidden opacity-85">
             <motion.div
             // content is duplicated, so translate by -50% for a perfect loop
@@ -150,12 +150,12 @@ export default function HeroSection() {
             <div className="absolute inset-0 bg-gradient-to-b from-black/75 via-black/50 to-black/75 pointer-events-none" />
         </div>
 
-        <div className="relative container flex flex-col md:flex-row mx-auto justify-between items-center px-6 pt-100 md:pt-0 md:px-14">
+        <div className="relative container flex flex-col md:flex-row mx-auto justify-between items-center px-6 pt-110 md:pt-0 md:px-14">
             <motion.h1
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8 }}
-                className="text-white text-4xl md:text-6xl uppercase font-style leading-tight max-w-3xl"
+                className="text-white text-3xl md:text-6xl uppercase font-style leading-tight max-w-3xl"
             >
                 Asian Progressive Dining Experience
             </motion.h1>
