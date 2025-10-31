@@ -36,7 +36,7 @@ export default function ReservationForm() {
         Please confirm my reservation.
         `;
 
-        const phoneNumber = "6281338382846"; 
+        const phoneNumber = "6281338382845"; 
 
         const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
         window.open(whatsappURL, "_blank");
