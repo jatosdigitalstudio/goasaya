@@ -57,7 +57,7 @@ export default function Floor2Section() {
                         <p className="text-sm text-black font-text leading-loose">
                             Ascend deeper into the mystery of GoaSaya, where the second floor unveils an extraordinary bar 
                             experience unlike any other. Here, the cave concept transforms into a seductive, high-energy 
-                            hideaway — a place where rough-hewn stone, shimmering crystals, and flickering lights set the scene 
+                            hideaway and a place where rough-hewn stone, shimmering crystals, and flickering lights set the scene 
                             for nights of indulgence and discovery.
                         </p>
                     </div>

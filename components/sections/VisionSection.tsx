@@ -35,10 +35,10 @@ export default function VisionSection() {
                         className="mt-8 md:mt-0 max-w-xl text-cream"
                     >
                         <p className="font-text text-md mb-4">
-                            To become a destination where people reconnect — with taste, with rhythm, and with each other — all under one immersive experience.
+                            To become a destination where people reconnect with taste, with rhythm, and with each other all under one immersive experience.
                         </p>
                         <p className="font-text text-md">
-                            We want Goa Saya to feel like an escape inside the city, where you don’t just dine, drink, or sing — you explore, indulge, and celebrate.                        
+                            We want Goa Saya to feel like an escape inside the city, where you don’t just dine, drink, or sing you explore, indulge, and celebrate.                        
                         </p>
                     </motion.div>
                 </div>

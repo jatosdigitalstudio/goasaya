@@ -30,7 +30,7 @@ export const EVENTS: EventType[] = [
     image: "/images/goa4.jpg",
     date: "Sunday, Dec 1",
     time: "6:00 PM – 9:00 PM",
-    desc: "An exclusive tasting menu inspired by the primal elements — flame, earth, and sea.",
+    desc: "An exclusive tasting menu inspired by the primal elements flame, earth, and sea.",
   },
 //   {
 //     title: "Twilight Wine Ritual",

@@ -82,7 +82,7 @@ export default function AboutSection() {
               className="font-text text-gray-300 leading-relaxed"
             >
               Inspired by nature&apos;s quiet strength, the cave surrounds you with
-              stone, wood, and soft lighting — creating a space that feels both
+              stone, wood, and soft lighting, creating a space that feels both
               grounding and inviting. Our kitchen brings that same energy to
               every dish, with fire-grilled flavors, hearty ingredients, and a
               touch of rustic charm. It&apos;s a place to feel at home, deep in the

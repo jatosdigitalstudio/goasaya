@@ -44,8 +44,8 @@ export default function AboutPage() {
                         className="mt-8 md:mt-0 max-w-xl text-maroon"
                     >
                         <p className="font-text text-lg mb-4 md:mb-12">
-                            In a world where people rush from place to place, we imagined something different. A space where time slows down. Where people can arrive for a meal, stay for the drinks, and lose themselves in the music and connection. A sanctuary carved from stone, sound, and sensation — where the experience deepens with every floor you descend.
-                            Goa Saya means more than just “the cave” — it represents mystery, intimacy, and discovery. Each floor is a chapter in a journey, whether you’re seeking taste, vibe, or expression.
+                            In a world where people rush from place to place, we imagined something different. A space where time slows down. Where people can arrive for a meal, stay for the drinks, and lose themselves in the music and connection. A sanctuary carved from stone, sound, and sensation of the experience deepens with every floor you descend.
+                            Goa Saya means more than just “the cave”. It represents mystery, intimacy, and discovery. Each floor is a chapter in a journey, whether you’re seeking taste, vibe, or expression.
                         </p>
                         <Image
                             src="/images/goalt2-1.jpg"

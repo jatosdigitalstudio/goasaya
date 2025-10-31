@@ -167,7 +167,7 @@ export default function HeroSection() {
                 className="mt-8 md:mt-0 md:text-right max-w-md text-white"
             >
                 <p className="font-text mb-4 text-sm md:text-base">
-                    Discover the flavors of adventure at Cave — where fire-grilled
+                    Discover the flavors of adventure at Cave, where fire-grilled
                     dishes, signature cocktails, and warm cave-like interiors create
                     one unforgettable dining experience.
                 </p>

@@ -54,7 +54,13 @@ export default function Floor1Section() {
                     className="flex justify-end"
                     >
                     <div className="max-w-3xl text-right mb-16">
-                        <p className="text-sm text-white font-text leading-loose">Step into a world where raw elegance meets refined taste. The first floor of GoaSaya is a luxurious restaurant carved to evoke the timeless beauty of a natural cave — a sanctuary where rough stone walls, ambient lighting, and organic textures create an atmosphere of intimate grandeur. Here, every detail is crafted to elevate your senses, from the sculpted dining alcoves to the soft, golden glow that dances across the mineral-rich surfaces.</p>
+                        <p className="text-sm text-white font-text leading-loose">
+                            Step into a world where raw elegance meets refined taste. The first floor of GoaSaya 
+                            is a luxurious restaurant carved to evoke the timeless beauty of a natural cave and
+                            a sanctuary where rough stone walls, ambient lighting, and organic textures create 
+                            an atmosphere of intimate grandeur. Here, every detail is crafted to elevate your 
+                            senses, from the sculpted dining alcoves to the soft, golden glow that dances across 
+                            the mineral-rich surfaces.</p>
                     </div>
                 </motion.div>
 
