@@ -87,7 +87,7 @@ export default function AboutSection() {
               viewport={{ once: true }}
               className="grid grid-cols-2 mt-10 md:gap-10"
             >
-              {["/images/goa5.jpg", "/images/goa7.webp"].map((src, i) => (
+              {["/images/goa10.JPG", "/images/goa7.webp"].map((src, i) => (
                 <motion.div
                   key={i}
                   initial={{ opacity: 0, y: 40 }}

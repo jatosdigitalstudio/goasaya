@@ -64,6 +64,9 @@ export default function EventsSection() {
                 <h3 className="mt-6 text-xl font-semibold font-style">
                     {event.title}
                 </h3>
+                <h3 className="text-lg font-regular font-text">
+                    {event.subtitle}
+                </h3>
                 <p className="text-black/60 text-sm mt-1 font-text">
                     {event.date} · {event.time}
                 </p>
@@ -79,7 +82,7 @@ export default function EventsSection() {
                 className="relative flex flex-col justify-center items-center text-white text-center h-[400px] overflow-hidden group"
                 >
                 <Image
-                    src="/images/bg-goa.jpg" 
+                    src="/images/goa11.JPG" 
                     alt="Explore More GOASAYA Events"
                     fill
                     className="object-cover brightness-75 group-hover:brightness-100 duration-700 transition-all"

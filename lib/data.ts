@@ -8,7 +8,8 @@ export interface EventType {
 }
 export const EVENTS = [
   {
-    title: "THE UNVEILING — Cutting Ribbon Ceremony",
+    title: "THE UNVEILING",
+    subtitle: "Cutting Ribbon Ceremony",
     slug: "the-unveiling-cutting-ribbon",
     date: "Tuesday, 11 November 2025",
     time: "11:00 AM",
@@ -17,7 +18,8 @@ export const EVENTS = [
     Experience the ceremonial ribbon cutting, a toast to new beginnings, and a first glimpse into our cave-inspired dining sanctuary.`,
   },
   {
-    title: "A NIGHT OF CLOUD — Shisha Night",
+    title: "A NIGHT OF CLOUD",
+    subtitle: "Shisha Night",
     slug: "a-night-of-cloud-shisha-night",
     date: "Thursday, 13 November 2025",
     time: "From 19:00",
@@ -26,7 +28,8 @@ export const EVENTS = [
     Let the clouds swirl as you enjoy crafted cocktails and soulful lounge tunes. Experience of calm indulgence beneath the cave glow.`,
   },
   {
-    title: "CAVE PARTY — DJ Session",
+    title: "CAVE PARTY",
+    subtitle: "DJ Session",
     slug: "cave-party-dj-session",
     date: "Friday, 14 November 2025",
     time: "From 19:00",
@@ -36,6 +39,7 @@ export const EVENTS = [
   },
   {
     title: "THE JAZZ AFFAIR",
+    subtitle: "",
     slug: "the-jazz-affair",
     date: "Saturday, 15 November 2025",
     time: "From 18:00",

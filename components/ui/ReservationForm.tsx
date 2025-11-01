@@ -98,7 +98,7 @@ export default function ReservationForm() {
               />
             </div>
             <div className="flex-1">
-              <label className="block text-sm mb-2 text-gray-300">Clock</label>
+              <label className="block text-sm mb-2 text-gray-300">Time</label>
               <input
                 type="time"
                 name="time"
@@ -111,16 +111,18 @@ export default function ReservationForm() {
           </div>
 
           <div>
-            <label className="block text-sm mb-2 text-gray-300">Smoking Area</label>
+            <label className="block text-sm mb-2 text-gray-300">Area</label>
             <select
               name="smoking"
               value={form.smoking}
               onChange={handleChange}
               className="w-full bg-transparent border-b border-gray-600 focus:border-white outline-none py-2 transition-all"
             >
-              <option value="No" className="text-black">No Smoking</option>
-              <option value="Yes" className="text-black">Smoking</option>
-              <option value="E-Cig" className="text-black">E-Cigarette/Pods</option>
+              <option value="No Smoking" className="text-black">No Smoking</option>
+              <option value="Smoking" className="text-black">Smoking</option>
+              <option value="E-Cigarette" className="text-black">E-Cigarette</option>
+              <option value="The Cave" className="text-black">VIP The Cave (up to 8 pax)</option>
+              <option value="The Hole" className="text-black">VIP The Hole (up to 12 pax)</option>
             </select>
           </div>
 
@@ -142,7 +144,7 @@ export default function ReservationForm() {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.97 }}
               type="submit"
-              className="bg-orangecream rounded-md text-black px-10 py-3 uppercase text-sm tracking-wider hover:bg-gray-200 transition-all"
+              className="bg-[#FFE3AF] rounded-md text-black px-10 py-3 uppercase text-sm tracking-wider hover:bg-gray-200 transition-all"
             >
               Reserve Now
             </motion.button>

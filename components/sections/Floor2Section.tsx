@@ -59,17 +59,27 @@ export default function Floor2Section() {
                     whileInView={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.8 }}
                     viewport={{ once: true }}
-                    className="flex mx-auto justify-center items-center mb-16"
+                    className="flex flex-col mx-auto justify-center items-center mb-16"
                     >
 
                     <motion.h1
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8 }}
-                        className="text-lg text-center text-white md:text-xl font-style leading-tight max-w-4xl"
+                        className="text-lg md:text-center uppercase text-white md:text-xl font-style leading-tight max-w-4xl"
                     >
-                        DISCOVER THE VIBRANT ENERGY OF CAVE BAR, WHERE HANDCRAFTED COCKTAILS, PREMIUM SPIRITS, 
-                        AND EARTHY, CAVE-INSPIRED SURROUNDINGS COME TOGETHER FOR A UNIQUE NIGHTLIFE EXPERIENCE.
+                        Above GoaSaya lies a private space for those who appreciate the finer things.
+                        A place where time slows, and every detail is made with intention.
+                    </motion.h1>
+                    <motion.h1
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.8 }}
+                        className="mt-8 text-lg md:text-center uppercase text-white md:text-xl font-style leading-tight max-w-lg"
+                    >
+                        For those who hold the card.
+                        The 1% Lounge 
+                        Where presence speaks louder than status.
                     </motion.h1>
                 </motion.div>
                 
