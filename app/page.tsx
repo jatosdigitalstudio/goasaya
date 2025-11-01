@@ -1,8 +1,8 @@
-import Head from "./head";
-import HeroSection from "@/components/sections/HeroSection";
-import AboutSection from "@/components/sections/AboutSection";
-import EventSection from "@/components/sections/EventSection";
+// import HeroSection from "@/components/sections/HeroSection";
+// import AboutSection from "@/components/sections/AboutSection";
+// import EventSection from "@/components/sections/EventSection";
 import { generatePageMetadata } from "@/lib/metadata";
+import ComingSoonPage from "@/components/pages/ComingSoonPage";
 
 export const metadata = generatePageMetadata({
   title: "GOASAYA | Asian Progressive Dining Experience",
@@ -14,9 +14,10 @@ export const metadata = generatePageMetadata({
 export default function Home() {
   return (
     <>
-      <HeroSection/>
+      {/* <HeroSection/>
       <AboutSection/>
-      <EventSection/>
+      <EventSection/> */}
+      <ComingSoonPage/>
     </>
   );
 }
