@@ -12,33 +12,41 @@ export default function Floor2Section() {
         { src: "/images/goalt2-5.jpg", span: "col-span-1" },
     ];
     return (
-        <section className="w-full bg-cream text-black overflow-hidden">
+        <section className="relative w-full bg-maroon text-black overflow-hidden">
+            <div className="absolute inset-0">
+                <Image
+                    src="/images/Japanese_Theme_Karaoke_3.jpg"
+                    alt="Asian dining background"
+                    fill
+                    priority
+                    className="object-cover object-center brightness-75"
+                />
+                <div className="absolute inset-0 bg-maroon/75"></div>
+            </div>
             <div className="relative container mx-auto px-6 md:px-14 py-30">
-                {/* Header Content */}
                 <div className="flex flex-col md:flex-row justify-between items-start mb-20 md:items-center">
-                    <motion.h1
-                        initial={{ opacity: 0, y: 20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.8 }}
-                        className="text-lg md:text-2xl font-style leading-tight max-w-4xl"
-                    >
-                        DISCOVER THE VIBRANT ENERGY OF CAVE BAR, WHERE HANDCRAFTED COCKTAILS, PREMIUM SPIRITS, 
-                        AND EARTHY, CAVE-INSPIRED SURROUNDINGS COME TOGETHER FOR A UNIQUE NIGHTLIFE EXPERIENCE.
-                    </motion.h1>
+                    <div className="flex items-center mb-16 md:mb-0">
+                        <Image
+                            src="/logo/onepercentlounge-white.png"
+                            alt="Onepercent Lounge"
+                            width={200}
+                            height={200}
+                        />
+                    </div>
 
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 1 }}
-                        className="mt-8 md:mt-0 md:text-right max-w-xs md:max-w-sm text-maroon"
+                        className="mt-8 md:mt-0 md:text-right max-w-xs md:max-w-sm text-white"
                     >
-                        <h1 className="font-style text-6xl mb-4">
+                        <h1 className="font-style text-5xl md:text-7xl mb-4">
                         2ND Floor
                         </h1>
-                        <Link href="/onepercentlounge" className="text-sm font-medium border-b border-gray-500 hover:border-white transition-all duration-300">
+                        <Link href="/reservation" className="text-sm font-medium transition-all duration-300">
                             <Image
-                                src="/images/reservemaroon.png"
-                                alt="1% Reservation"
+                                src="/images/reservewhite.png"
+                                alt="GOASAYA Reservation"
                                 width={300}
                                 height={300}
                             />
@@ -51,17 +59,20 @@ export default function Floor2Section() {
                     whileInView={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.8 }}
                     viewport={{ once: true }}
-                    className="flex justify-end"
+                    className="flex mx-auto justify-center items-center mb-16"
                     >
-                    <div className="max-w-3xl text-right mb-16">
-                        <p className="text-sm text-black font-text leading-loose">
-                            Ascend deeper into the mystery of GoaSaya, where the second floor unveils an extraordinary bar 
-                            experience unlike any other. Here, the cave concept transforms into a seductive, high-energy 
-                            hideaway and a place where rough-hewn stone, shimmering crystals, and flickering lights set the scene 
-                            for nights of indulgence and discovery.
-                        </p>
-                    </div>
+
+                    <motion.h1
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.8 }}
+                        className="text-lg text-center text-white md:text-xl font-style leading-tight max-w-4xl"
+                    >
+                        DISCOVER THE VIBRANT ENERGY OF CAVE BAR, WHERE HANDCRAFTED COCKTAILS, PREMIUM SPIRITS, 
+                        AND EARTHY, CAVE-INSPIRED SURROUNDINGS COME TOGETHER FOR A UNIQUE NIGHTLIFE EXPERIENCE.
+                    </motion.h1>
                 </motion.div>
+                
 
                 <motion.div
                     initial={{ opacity: 0 }}

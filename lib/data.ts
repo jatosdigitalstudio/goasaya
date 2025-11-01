@@ -12,7 +12,7 @@ export const EVENTS = [
     slug: "the-unveiling-cutting-ribbon",
     date: "Tuesday, 11 November 2025",
     time: "11:00 AM",
-    image: "/events/unveiling.JPG",
+    image: "/events/unveiling-2.JPG",
     desc: `Join us for the unveiling of GoaSaya, where modern design meets the timeless allure of nature. 
     Experience the ceremonial ribbon cutting, a toast to new beginnings, and a first glimpse into our cave-inspired dining sanctuary.`,
   },
@@ -21,7 +21,7 @@ export const EVENTS = [
     slug: "a-night-of-cloud-shisha-night",
     date: "Thursday, 13 November 2025",
     time: "From 19:00",
-    image: "/events/shisa.JPG",
+    image: "/events/shisha2.JPG",
     desc: `Sink into an ethereal evening surrounded by ambient lights, soft beats, and the rich aroma of premium shisha. 
     Let the clouds swirl as you enjoy crafted cocktails and soulful lounge tunes. Experience of calm indulgence beneath the cave glow.`,
   },

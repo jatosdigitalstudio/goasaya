@@ -16,15 +16,14 @@ export default function Floor1Section() {
             <div className="relative container mx-auto px-6 md:px-14 py-30">
                 {/* Header Content */}
                 <div className="flex flex-col md:flex-row justify-between items-start mb-20 md:items-center">
-                    <motion.h1
-                        initial={{ opacity: 0, y: 20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.8 }}
-                        className="text-lg md:text-2xl font-style leading-tight max-w-4xl"
-                    >
-                        DISCOVER THE FLAVORS OF ADVENTURE AT CAVE, A NATURE-INSPIRED RESTO BAR WHERE FLAME-GRILLED DISHES, 
-                        SIGNATURE DRINKS, AND WARM, CAVE-LIKE INTERIORS CREATE ONE UNFORGETTABLE DINING EXPERIENCE.
-                    </motion.h1>
+                    <div className="flex items-start mb-16 md:mb-0">
+                        <Image
+                            src="/logo/LogotypeIcon-02.png"
+                            alt="GOASAYA"
+                            width={250}
+                            height={250}
+                        />
+                    </div>
 
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}
@@ -32,10 +31,10 @@ export default function Floor1Section() {
                         transition={{ duration: 1 }}
                         className="mt-8 md:mt-0 md:text-right max-w-xs md:max-w-sm text-gray-300"
                     >
-                        <h1 className="font-style text-7xl mb-4">
+                        <h1 className="font-style text-5xl md:text-7xl mb-4">
                         1ST Floor
                         </h1>
-                        <Link href="/reservation" className="text-sm font-medium border-b border-gray-500 hover:border-white transition-all duration-300">
+                        <Link href="/reservation" className="text-sm font-medium transition-all duration-300">
                             <Image
                                 src="/images/reservewhite.png"
                                 alt="GOASAYA Reservation"
@@ -51,17 +50,18 @@ export default function Floor1Section() {
                     whileInView={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.8 }}
                     viewport={{ once: true }}
-                    className="flex justify-end"
+                    className="flex mx-auto justify-center items-center mb-16"
                     >
-                    <div className="max-w-3xl text-right mb-16">
-                        <p className="text-sm text-white font-text leading-loose">
-                            Step into a world where raw elegance meets refined taste. The first floor of GoaSaya 
-                            is a luxurious restaurant carved to evoke the timeless beauty of a natural cave and
-                            a sanctuary where rough stone walls, ambient lighting, and organic textures create 
-                            an atmosphere of intimate grandeur. Here, every detail is crafted to elevate your 
-                            senses, from the sculpted dining alcoves to the soft, golden glow that dances across 
-                            the mineral-rich surfaces.</p>
-                    </div>
+
+                    <motion.h1
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.8 }}
+                        className="text-lg text-center md:text-xl font-style leading-tight max-w-4xl"
+                    >
+                        DISCOVER THE FLAVORS OF ADVENTURE AT CAVE, A NATURE-INSPIRED RESTO BAR WHERE FLAME-GRILLED DISHES, 
+                        SIGNATURE DRINKS, AND WARM, CAVE-LIKE INTERIORS CREATE ONE UNFORGETTABLE DINING EXPERIENCE.
+                    </motion.h1>
                 </motion.div>
 
                 <motion.div

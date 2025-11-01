@@ -59,7 +59,7 @@ export default function Header() {
           >
             <Link
               href="/reservation"
-              className="font-style rounded-md text-sm bg-orangecream px-6 py-2 text-black hover:bg-maroon hover:text-white transition"
+              className="font-style rounded-md text-sm bg-[#FFE3AF] px-6 py-2 text-black hover:bg-maroon hover:text-white transition"
             >
               Book a table
             </Link>
@@ -106,7 +106,7 @@ export default function Header() {
             >
             <Link
                 href="/reservation"
-                className="font-style text-sm bg-orangecream px-6 py-2 text-black hover:bg-maroon hover:text-white transition"
+                className="font-style text-sm bg-[#FFE3AF] rounded-md px-6 py-2 text-black hover:bg-maroon hover:text-white transition"
                 onClick={() => setMenuOpen(false)}
             >
               Book a table

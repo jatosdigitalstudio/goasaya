@@ -103,14 +103,13 @@ import Image from "next/image";
 import Link from "next/link";
 
 const images = [
-  "/images/goa1.jpg",
+  "/images/goa9.JPG",
   "/images/goa2.jpg",
   "/images/goa3.jpg",
   "/images/goa4.jpg",
+  "/images/goa7.webp",
   "/images/goa5.jpg",
   "/images/goa6.jpg",
-  "/images/goa7.webp",
-  "/images/goa1.jpg",
 ];
 
 export default function HeroSection() {
@@ -122,7 +121,7 @@ export default function HeroSection() {
             animate={{ x: ["0%", "-50%"] }}
             transition={{
                 ease: "linear",
-                duration: 25,
+                duration: 20,
                 repeat: Infinity,
             }}
             // important: prevent wrapping and ensure GPU-accelerated transform
