@@ -78,7 +78,7 @@ export default function AboutSection() {
               whileInView={{ opacity: 1 }}
               transition={{ duration: 1, delay: 0.4 }}
               viewport={{ once: true }}
-              className="grid grid-cols-2 mt-10 md:gap-10"
+              className="grid grid-cols-1 md:grid-cols-2 mt-10 gap-6 md:gap-10"
             >
               {["/images/goa10.JPG", "/images/goa7.webp"].map((src, i) => (
                 <motion.div

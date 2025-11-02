@@ -121,8 +121,8 @@ export default function ReservationForm() {
               <option value="No Smoking" className="text-black">No Smoking</option>
               <option value="Smoking" className="text-black">Smoking</option>
               <option value="E-Cigarette" className="text-black">E-Cigarette</option>
-              <option value="The Cave" className="text-black">VIP The Cave (up to 8 pax)</option>
-              <option value="The Hole" className="text-black">VIP The Hole (up to 12 pax)</option>
+              <option value="The Cave" className="text-black">VIP The Cave <br /> <br />(up to 8 pax)</option>
+              <option value="The Hole" className="text-black">VIP The Hole <br /><br />(up to 12 pax)</option>
             </select>
           </div>
 

@@ -37,7 +37,7 @@ export default function EventsPage() {
                 transition={{ duration: 0.8 }}
                 className="text-4xl md:text-6xl font-style leading-tight max-w-2xl"
             >
-                Discover Experiences Beyond Dining
+                Where Memories Take Shape
             </motion.h1>
 
             <motion.div
@@ -46,10 +46,9 @@ export default function EventsPage() {
                 transition={{ duration: 1 }}
                 className="mt-8 md:mt-0 md:text-right max-w-md text-gray-300"
             >
-                <p className="font-text text-md mb-4">
-                    Within GOASAYA’s stone walls, every evening is a ritual from
-                    immersive jazz nights to mixology performances by torchlight.
-                    Explore moments crafted for the senses.
+                <p className="font-text text-md mb-4 leading-loose">
+                    From private celebrations to quiet reflections, GoaSaya holds space for every moment worth remembering.
+                    Under the glow of soft lights, we celebrate togetherness in its purest form.
                 </p>
             </motion.div>
         </div>
