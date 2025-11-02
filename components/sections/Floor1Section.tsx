@@ -32,14 +32,14 @@ export default function Floor1Section() {
                         className="mt-8 md:mt-0 md:text-right max-w-xs md:max-w-sm text-gray-300"
                     >
                         <h1 className="font-style text-5xl md:text-7xl mb-4">
-                        1ST Floor
+                        1st Floor
                         </h1>
                         <Link href="/reservation" className="text-sm font-medium transition-all duration-300">
                             <Image
                                 src="/images/reservewhite.png"
                                 alt="GOASAYA Reservation"
-                                width={300}
-                                height={300}
+                                width={250}
+                                height={250}
                             />
                         </Link>
                     </motion.div>
@@ -57,10 +57,11 @@ export default function Floor1Section() {
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8 }}
-                        className="text-lg md:text-center md:text-xl font-style leading-tight max-w-4xl"
+                        className="text-lg md:text-center md:text-xl font-style leading-loose max-w-4xl"
                     >
-                        DISCOVER THE FLAVORS OF ADVENTURE AT CAVE, A NATURE-INSPIRED RESTO BAR WHERE FLAME-GRILLED DISHES, 
-                        SIGNATURE DRINKS, AND WARM, CAVE-LIKE INTERIORS CREATE ONE UNFORGETTABLE DINING EXPERIENCE.
+                        A short escape from the modern life to an intimate man-made cave, where the outside world can reach you.
+                        Your safe space surrounded by stone walls and soft lights. A deeply relaxing ambience serving you comfort.
+                        Here we gather to share meals and create memories
                     </motion.h1>
                 </motion.div>
 

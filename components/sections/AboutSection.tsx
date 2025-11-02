@@ -20,29 +20,22 @@ export default function AboutSection() {
 
       {/* Content */}
       <div className="relative container mx-auto px-6 md:px-14 py-24">
-        <div className="flex flex-col md:flex-row justify-between items-start">
+        <div className="flex flex-col md:flex-row justify-between items-start gap-4">
           {/* Left Column */}
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
-            className="mt-8 md:mt-0 max-w-sm text-gray-300"
+            className="mt-8 md:mt-0"
           >
-            <motion.div
-              initial={{ opacity: 0, scale: 0.95 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.9, delay: 0.3 }}
-              viewport={{ once: true }}
-            >
-              <Image
-                src="/images/goa8.JPG"
-                alt="Goasaya Ambience"
-                width={400}
-                height={500}
-                className=" shadow-lg object-cover"
-              />
-            </motion.div>
+            <Image
+              src="/images/goa8.JPG"
+              alt="Goasaya Ambience"
+              width={400}
+              height={500}
+              className=" shadow-lg object-cover"
+            />
           </motion.div>
 
           {/* Right Column */}

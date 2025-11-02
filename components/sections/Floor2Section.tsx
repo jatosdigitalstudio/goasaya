@@ -41,14 +41,14 @@ export default function Floor2Section() {
                         className="mt-8 md:mt-0 md:text-right max-w-xs md:max-w-sm text-white"
                     >
                         <h1 className="font-style text-5xl md:text-7xl mb-4">
-                        2ND Floor
+                        2nd Floor
                         </h1>
                         <Link href="/reservation" className="text-sm font-medium transition-all duration-300">
                             <Image
                                 src="/images/reservewhite.png"
                                 alt="GOASAYA Reservation"
-                                width={300}
-                                height={300}
+                                width={250}
+                                height={250}
                             />
                         </Link>
                     </motion.div>
@@ -66,20 +66,11 @@ export default function Floor2Section() {
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8 }}
-                        className="text-lg md:text-center uppercase text-white md:text-xl font-style leading-tight max-w-4xl"
+                        className="text-lg md:text-center text-white md:text-xl font-style leading-loose max-w-4xl"
                     >
                         Above GoaSaya lies a private space for those who appreciate the finer things.
-                        A place where time slows, and every detail is made with intention.
-                    </motion.h1>
-                    <motion.h1
-                        initial={{ opacity: 0, y: 20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.8 }}
-                        className="mt-8 text-lg md:text-center uppercase text-white md:text-xl font-style leading-tight max-w-lg"
-                    >
-                        For those who hold the card.
-                        The 1% Lounge 
-                        Where presence speaks louder than status.
+                        A place where time slows, and every detail is made with intention. For those who hold the card.
+                        The 1% Lounge. Where presence speaks louder than status.
                     </motion.h1>
                 </motion.div>
                 

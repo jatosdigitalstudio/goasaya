@@ -26,7 +26,6 @@ const WhatsappButton = () => {
             width={50}
             height={50}
           />
-          {/* <span className="hidden md:flex leading-[0.6] text-sm text-black">Book a Table</span> */}
         </motion.button>
       </Link>
     </motion.div>
