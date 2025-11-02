@@ -15,22 +15,27 @@ export default function EventsSection() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8 }}
-                className="text-maroon text-4xl md:text-6xl uppercase font-style leading-tight max-w-3xl"
+                className="text-maroon text-4xl md:text-6xl uppercase font-style leading-tight max-w-2xl"
             >
-                Discover Experiences Beyond Dining
+                {/* Discover Experiences Beyond Dining */}
+                Where Memories Take Shape
             </motion.h1>
 
             <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1 }}
-                className="mt-8 md:mt-0 md:text-right max-w-md text-black"
+                className="mt-8 md:mt-0 md:text-right max-w-lg text-black"
             >
-                <p className="font-text text-md mb-4">
+                {/* <p className="font-text text-md mb-4">
                     At GoaSaya, every evening tells a story from intimate jazz nights
                     beneath golden light, to vibrant mixology showcases in our cave bar.
                     Indulge in moments crafted for those who seek more than a meal, an
                     Experience.
+                </p> */}
+                <p className="font-text text-md mb-4 leading-loose">
+                    From private celebrations to quiet reflections, GoaSaya holds space for every moment worth remembering.
+                    Under the glow of soft lights, we celebrate togetherness in its purest form.
                 </p>
             </motion.div>
         </div>

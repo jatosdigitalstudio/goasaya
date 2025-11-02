@@ -163,12 +163,17 @@ export default function HeroSection() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1 }}
-                className="mt-8 md:mt-0 md:text-right max-w-md text-white"
+                className="mt-8 md:mt-0 md:text-right max-w-lg text-white"
             >
-                <p className="font-text mb-4 text-sm md:text-base">
+                {/* <p className="font-text mb-4 text-sm md:text-base">
                     Discover the flavors of adventure at Cave, where fire-grilled
                     dishes, signature cocktails, and warm cave-like interiors create
                     one unforgettable dining experience.
+                </p> */}
+                <p className="font-text mb-4 text-sm leading-loose md:text-base">
+                    A short escape from modern life to an intimate man-made cave.
+                    A sanctuary where light, stone, and sound come together in quiet harmony.
+                    Here, comfort finds you and the world fades away.
                 </p>
                 <Link
                     href="/experience"

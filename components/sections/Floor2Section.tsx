@@ -69,7 +69,7 @@ export default function Floor2Section() {
                         className="text-lg md:text-center text-white md:text-xl font-style leading-loose max-w-4xl"
                     >
                         Above GoaSaya lies a private space for those who appreciate the finer things.
-                        A place where time slows, and every detail is made with intention. For those who hold the card.
+                        A place where time slows, and every detail is made with intention. <br /> <br /> For those who hold the card.
                         The 1% Lounge. Where presence speaks louder than status.
                     </motion.h1>
                 </motion.div>

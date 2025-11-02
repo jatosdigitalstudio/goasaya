@@ -62,7 +62,7 @@ export default function AboutSection() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.9, delay: 0.3 }}
               viewport={{ once: true }}
-              className="font-text text-gray-300 leading-relaxed"
+              className="font-text text-gray-300 leading-loose"
             >
               Inspired by nature&apos;s quiet strength, the cave surrounds you with
               stone, wood, and soft lighting, creating a space that feels both

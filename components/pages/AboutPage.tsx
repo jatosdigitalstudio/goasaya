@@ -32,8 +32,8 @@ export default function AboutPage() {
                             <Image
                                 src="/images/goalt1-6.jpg"
                                 alt="Goasaya Ambience"
-                                width={400}
-                                height={400}
+                                width={500}
+                                height={500}
                             />
                         </motion.div>
                     </motion.div>
@@ -43,7 +43,7 @@ export default function AboutPage() {
                         transition={{ duration: 1 }}
                         className="mt-8 md:mt-0 max-w-xl text-black"
                     >
-                        <p className="font-text text-lg mb-4 md:mb-12">
+                        <p className="font-text text-lg mb-4 md:mb-12 leading-loose">
                             In a world where people rush from place to place, we imagined something different. A space where time slows down. Where people can arrive for a meal, stay for the drinks, and lose themselves in the music and connection. A sanctuary carved from stone, sound, and sensation of the experience deepens with every floor you descend.
                             Goa Saya means more than just “the cave”. It represents mystery, intimacy, and discovery. Each floor is a chapter in a journey, whether you’re seeking taste, vibe, or expression.
                         </p>

@@ -61,7 +61,7 @@ export default function Floor1Section() {
                     >
                         A short escape from the modern life to an intimate man-made cave, where the outside world can reach you.
                         Your safe space surrounded by stone walls and soft lights. A deeply relaxing ambience serving you comfort.
-                        Here we gather to share meals and create memories
+                        Here we gather to share meals and create memories.
                     </motion.h1>
                 </motion.div>
 
