@@ -73,7 +73,7 @@ export default function Floor2Section() {
                         The 1% Lounge. Where presence speaks louder than status. */}
 
                         Above GoaSaya lies a private space for those who appreciate the finer things. <br />
-                        A place where you belong. <br /> <br /> Our members presense speaks louder than status.
+                        A place where you belong. <br /> <br /> Our members presence speaks louder than status.
                     </motion.h1>
                 </motion.div>
                 
