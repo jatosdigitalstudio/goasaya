@@ -3,6 +3,9 @@ import type { Metadata } from "next";
 import { EVENTS, EventType } from "@/lib/data";
 import SingleEventPage from "@/components/pages/SingleEventPage";
 
+const baseUrl = "https://goasaya.com";
+
+
 export async function generateMetadata({
   params,
 }: {
@@ -26,7 +29,7 @@ export async function generateMetadata({
       description: event.desc,
       images: [
         {
-          url: event.image,
+          url: `${baseUrl}${event.content}`,
           width: 1200,
           height: 630,
           alt: event.title,
@@ -46,13 +49,13 @@ export default async function SingleEvent({
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
-  const event: EventType | undefined = EVENTS.find((e) => e.slug === slug);
+  const event = EVENTS.find((e) => e.slug === slug);
 
   if (!event) return notFound();
 
   return (
     <>
-        <SingleEventPage event={event}/>
+        <SingleEventPage event={event as EventType}/>
     </>
   );
 }

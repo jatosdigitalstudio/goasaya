@@ -89,7 +89,7 @@ export default function EventsPage() {
 
                 <div className="p-6">
                     <p className="text-white/80 text-sm font-text line-clamp-3 mb-4">
-                        {event.desc}
+                        {event.homedesc}
                     </p>
                     <Link
                         href={`/events/${event.slug}`}

@@ -3,16 +3,11 @@
 import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import { EventType } from "@/lib/data";
+
 
 interface EventProps {
-  event: {
-    title: string;
-    slug: string;
-    image: string;
-    date: string;
-    time: string;
-    desc: string;
-  };
+  event: EventType;
 }
 
 export default function SingleEventPage({ event }: EventProps) {
@@ -44,13 +39,38 @@ export default function SingleEventPage({ event }: EventProps) {
           <p className="text-maroon font-semibold">
             {event.date} · {event.time}
           </p>
+{/* 
+          <p className="leading-relaxed text-black/80">
+            {event.desc}
+          </p> */}
 
-          <p className="leading-relaxed text-black/80">{event.desc}</p>
+          {
+            event.content && (
+            <Image
+              src={event.content}
+              alt={event.title}
+              width={400}
+              height={400}
+            />
+            )
+          }
+
+          <div
+            className="prose prose-invert max-w-none text-lg leading-relaxed"
+            dangerouslySetInnerHTML={{ __html: event.desc }}
+          />
 
           {/* CTA */}
           <div className="pt-6 flex flex-col items-start gap-6">
             <Link
-              href="/reservation"
+              href={{
+                pathname: "/reservation",
+                query: {
+                  event: event.title,
+                  date: event.date,
+                  slug: event.slug,
+                },
+              }}
               className="inline-block bg-orange rounded-md text-white px-8 py-3 hover:bg-black transition"
             >
               Reserve Your Seat

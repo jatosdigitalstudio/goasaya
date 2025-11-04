@@ -9,7 +9,7 @@ export default function EventsSection() {
   const latestEvents = EVENTS.slice(0, 3);
 
   return (
-    <section className="bg-cream text-black py-24 px-6 md:px-16 overflow-hidden">
+    <section className="bg-cream text-black py-24 px-8 md:px-16 overflow-hidden">
         <div className="flex flex-col md:flex-row justify-between items-start mb-12 md:mb-32 md:items-center">
             <motion.h1
                 initial={{ opacity: 0, y: 20 }}
@@ -27,12 +27,6 @@ export default function EventsSection() {
                 transition={{ duration: 1 }}
                 className="mt-8 md:mt-0 md:text-right max-w-lg text-black"
             >
-                {/* <p className="font-text text-md mb-4">
-                    At GoaSaya, every evening tells a story from intimate jazz nights
-                    beneath golden light, to vibrant mixology showcases in our cave bar.
-                    Indulge in moments crafted for those who seek more than a meal, an
-                    Experience.
-                </p> */}
                 <p className="font-text text-md mb-4 leading-loose">
                     From private celebrations to quiet reflections, GoaSaya holds space for every moment worth remembering.
                     Under the glow of soft lights, we celebrate togetherness in its purest form.
@@ -58,23 +52,23 @@ export default function EventsSection() {
                 }`}
             >
                 <Link href={`/events/${event.slug}`} className="w-full group">
-                <div className="relative w-full h-[400px] overflow-hidden">
-                    <Image
-                        src={event.image}
-                        alt={event.title}
-                        fill
-                        className="object-cover duration-700 brightness-90"
-                    />
-                </div>
-                <h3 className="mt-6 text-xl font-semibold font-style">
-                    {event.title}
-                </h3>
-                <h3 className="text-lg font-regular font-text">
-                    {event.subtitle}
-                </h3>
-                <p className="text-black/60 text-sm mt-1 font-text">
-                    {event.date} · {event.time}
-                </p>
+                    <div className="relative w-full h-[420px] overflow-hidden">
+                        <Image
+                            src={event.image}
+                            alt={event.title}
+                            fill
+                            className="object-cover duration-700 brightness-90"
+                        />
+                    </div>
+                    <h3 className="mt-6 text-xl font-semibold font-style">
+                        {event.title}
+                    </h3>
+                    <h3 className="text-lg font-regular font-text">
+                        {event.subtitle}
+                    </h3>
+                    <p className="text-black/60 text-sm mt-1 font-text">
+                        {event.date} · {event.time}
+                    </p>
                 </Link>
             </motion.div>
             ))}
