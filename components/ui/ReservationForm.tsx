@@ -187,18 +187,34 @@ export default function ReservationForm() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
 
-    const message = `
-*New Reservation Request - GOASAYA*
------------------------------------
-${isEventReservation ? `*Event:* ${eventName}\n*Event Date:* ${eventDate}\n*Event Time:* ${eventTime}\n` : ""}
------------------------------------
-*Name:* ${form.name}
-*Phone:* ${form.phone}
-*Area:* ${form.smoking}
-*Pax:* ${form.pax}
------------------------------------
-Please confirm my reservation.
-`;
+    const lines = [];
+
+    lines.push("*New Reservation Request - GOASAYA*");
+    lines.push("-----------------------------------");
+
+    // Event info (if applicable)
+    if (isEventReservation) {
+      if (eventName) lines.push(`*Event:* ${eventName}`);
+      if (eventDate) lines.push(`*Event Date:* ${eventDate}`);
+      lines.push("-----------------------------------");
+    }
+
+    // Customer info
+    if (form.name) lines.push(`*Name:* ${form.name}`);
+    if (form.phone) lines.push(`*Phone:* ${form.phone}`);
+    if (form.smoking) lines.push(`*Area:* ${form.smoking}`);
+    if(!isEventReservation) {
+      if (form.date) lines.push(`*Date:* ${form.date}`);
+      if (form.time) lines.push(`*Time:* ${form.time}`);
+      if (form.smoking) lines.push(`*Area:* ${form.smoking}`);
+    }
+    if (form.pax) lines.push(`*Pax:* ${form.pax}`);
+
+    lines.push("-----------------------------------");
+
+    lines.push("Please confirm my reservation.");
+
+    const message = lines.join("\n");
 
     const phoneNumber = "6281338382845";
     const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;

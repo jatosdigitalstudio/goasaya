@@ -29,7 +29,8 @@ export async function generateMetadata({
       description: event.desc,
       images: [
         {
-          url: `${baseUrl}${event.content}`,
+          // url: `${baseUrl}${event.content}`,
+          url: event.image,
           width: 1200,
           height: 630,
           alt: event.title,
