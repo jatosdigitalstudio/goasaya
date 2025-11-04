@@ -10,7 +10,6 @@ export default function Events() {
             keywords="private dining, event venue restaurant, corporate dinner, luxury event space, exclusive dining experience, private restaurant booking"
             image="https://www.goasaya.com/logo/09.jpg"
         />
-        
         <EventsPage/>
     </>
   );
