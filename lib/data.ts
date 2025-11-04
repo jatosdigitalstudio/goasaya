@@ -16,7 +16,7 @@ export const EVENTS = [
     date: "Tuesday, 11 November 2025",
     time: "11:00 AM",
     image: "/events/unveiling-2.JPG",
-    content: "/events/Grand-Opening-Event.png",
+    content: "/events/unveiling-content.jpeg",
     homedesc: `Be the First to Explore GOA. Step into an evening where modern design meets the timeless allure of nature.
           Celebrate the unveiling of GoaSaya with a ceremonial ribbon cutting, a toast to new beginnings, and your first journey into our cave-inspired sanctuary.`,
     desc: `Be the First to Explore GOA<br/>

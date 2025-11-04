@@ -202,7 +202,6 @@ export default function ReservationForm() {
     // Customer info
     if (form.name) lines.push(`*Name:* ${form.name}`);
     if (form.phone) lines.push(`*Phone:* ${form.phone}`);
-    if (form.smoking) lines.push(`*Area:* ${form.smoking}`);
     if(!isEventReservation) {
       if (form.date) lines.push(`*Date:* ${form.date}`);
       if (form.time) lines.push(`*Time:* ${form.time}`);
