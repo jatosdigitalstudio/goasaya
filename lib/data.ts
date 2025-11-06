@@ -10,19 +10,16 @@ export interface EventType {
 
 export const EVENTS = [
   {
-    title: "THE UNVEILING",
-    subtitle: "Cutting Ribbon Ceremony",
-    slug: "the-unveiling-cutting-ribbon",
+    title: "BE THE FIRST TO EXPLORE GOA",
+    subtitle: "Exclusive Dinner",
+    slug: "be-the-first-to-explore-goa",
     date: "Tuesday, 11 November 2025",
     time: "11:00 AM",
-    image: "/events/unveiling-2.JPG",
+    image: "/events/unveiling-content.jpeg",
     content: "/events/unveiling-content.jpeg",
-    homedesc: `Be the First to Explore GOA. Step into an evening where modern design meets the timeless allure of nature.
-          Celebrate the unveiling of GoaSaya with a ceremonial ribbon cutting, a toast to new beginnings, and your first journey into our cave-inspired sanctuary.`,
+    homedesc: `Be the First to Explore GOA. Step into an evening where modern design meets the timeless allure of nature.`,
     desc: `Be the First to Explore GOA<br/>
-          Step into an evening where modern design meets the timeless allure of nature.<br/>
-          Celebrate the unveiling of <b>GoaSaya</b> with a ceremonial ribbon cutting,<br/>
-          a toast to new beginnings, and your first journey into our cave-inspired sanctuary.<br/><br/>
+          Step into an evening where modern design meets the timeless allure of nature.<br/> <br/> 
 
           Immerse yourself in exclusive live performances by <b>Natasya Elvira</b> (19.00 – 20.00 WIB)<br/>
           and <b>Herjunot Ali</b> (21.00 – 22.00 WIB).<br/><br/>

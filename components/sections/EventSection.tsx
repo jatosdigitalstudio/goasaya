@@ -67,7 +67,7 @@ export default function EventsSection() {
                         {event.subtitle}
                     </h3>
                     <p className="text-black/60 text-sm mt-1 font-text">
-                        {event.date} · {event.time}
+                        {event.date}
                     </p>
                 </Link>
             </motion.div>

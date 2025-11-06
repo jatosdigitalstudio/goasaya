@@ -20,7 +20,7 @@ export default function SingleEventPage({ event }: EventProps) {
         className="max-w-5xl mx-auto"
       >
         {/* Image Banner */}
-        <div className="relative w-full h-[500px] overflow-hidden shadow-lg mb-10">
+        <div className="relative w-full h-[300px] md:h-[400px] overflow-hidden shadow-lg mb-10">
           <Image
             src={event.image}
             alt={event.title}
@@ -28,20 +28,22 @@ export default function SingleEventPage({ event }: EventProps) {
             className="object-cover"
             priority
           />
-          <div className="absolute inset-0 bg-black/30" />
-          <h1 className="absolute bottom-6 left-6 text-4xl md:text-5xl font-style text-white">
-            {event.title}
-          </h1>
+          <div className="absolute inset-0 bg-black/95  md:bg-black/75" />
+          <div className="absolute bottom-6 left-6 flex flex-col">
+            <h1 className="text-3xl md:text-5xl mb-2 font-style text-white">
+              {event.title}
+            </h1>
+            <p className="text-white font-semibold">
+              {event.date}
+            </p>
+          </div>
+         
         </div>
 
         {/* Event Info */}
         <div className="text-left space-y-6 font-text max-w-3xl">
-          <p className="text-maroon font-semibold">
+          {/* <p className="text-maroon font-semibold">
             {event.date} · {event.time}
-          </p>
-{/* 
-          <p className="leading-relaxed text-black/80">
-            {event.desc}
           </p> */}
 
           {
