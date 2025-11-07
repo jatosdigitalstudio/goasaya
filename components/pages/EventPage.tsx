@@ -82,7 +82,7 @@ export default function EventsPage() {
                                 {event.title}
                             </h3>
                             <p className="text-white/70 text-sm mt-1 font-text">
-                                {event.date} · {event.time}
+                                {event.date} 
                             </p>
                         </div>
                     </div>
