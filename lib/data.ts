@@ -56,7 +56,7 @@ export const EVENTS = [
   //         <i>RSVP Only | Limited Seats Available</i>`
   // },
   {
-    title: "A NIGHT OF CLOUD",
+    title: "Arabian Night at Goa",
     subtitle: "Shisha Night",
     tracking: "arabian_night",
     slug: "a-night-of-cloud-shisha-night",
