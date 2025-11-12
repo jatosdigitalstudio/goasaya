@@ -1,6 +1,7 @@
 export interface EventType {
   title: string;
   slug: string;
+  tracking: string;
   image: string;
   date: string;
   time: string;
@@ -12,6 +13,7 @@ export const EVENTS = [
   {
     title: "BE THE FIRST TO EXPLORE GOA",
     subtitle: "Exclusive Dinner",
+    tracking: "explore_goa",
     slug: "be-the-first-to-explore-goa",
     date: "Tuesday, 11 November 2025",
     time: "11:00 AM",
@@ -56,6 +58,7 @@ export const EVENTS = [
   {
     title: "A NIGHT OF CLOUD",
     subtitle: "Shisha Night",
+    tracking: "arabian_night",
     slug: "a-night-of-cloud-shisha-night",
     date: "Thursday, 13 November 2025",
     time: "From 19:00",
@@ -68,6 +71,7 @@ export const EVENTS = [
   {
     title: "CAVE PARTY",
     subtitle: "DJ Session",
+    tracking: "cave_party",
     slug: "cave-party-dj-session",
     date: "Friday, 14 November 2025",
     time: "From 19:00",
@@ -80,6 +84,7 @@ export const EVENTS = [
   {
     title: "THE JAZZ AFFAIR",
     subtitle: "",
+    tracking: "jazz_affair",
     slug: "the-jazz-affair",
     date: "Saturday, 15 November 2025",
     time: "From 18:00",
