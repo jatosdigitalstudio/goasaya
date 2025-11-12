@@ -5,7 +5,6 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { EventType } from "@/lib/data";
 
-
 interface EventProps {
   event: EventType;
 }
@@ -19,7 +18,6 @@ export default function SingleEventPage({ event }: EventProps) {
         transition={{ duration: 0.8 }}
         className="max-w-5xl mx-auto"
       >
-        {/* Image Banner */}
         <div className="relative w-full h-[300px] md:h-[400px] overflow-hidden shadow-lg mb-10">
           <Image
             src={event.image}
@@ -28,7 +26,7 @@ export default function SingleEventPage({ event }: EventProps) {
             className="object-cover"
             priority
           />
-          <div className="absolute inset-0 bg-black/95  md:bg-black/75" />
+          <div className="absolute inset-0 bg-black/85 md:bg-black/75" />
           <div className="absolute bottom-6 left-6 flex flex-col">
             <h1 className="text-3xl md:text-5xl mb-2 font-style text-white">
               {event.title}
@@ -40,7 +38,6 @@ export default function SingleEventPage({ event }: EventProps) {
          
         </div>
 
-        {/* Event Info */}
         <div className="text-left space-y-6 font-text max-w-3xl">
           {/* <p className="text-maroon font-semibold">
             {event.date} · {event.time}
@@ -70,7 +67,7 @@ export default function SingleEventPage({ event }: EventProps) {
                 query: {
                   event: event.title,
                   date: event.date,
-                  slug: event.slug,
+                  tracking: event.tracking,
                 },
               }}
               className="inline-block bg-orange rounded-md text-white px-8 py-3 hover:bg-black transition"
