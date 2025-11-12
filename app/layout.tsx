@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import ClientLayout from "./client-layout";
 import "@/styles/globals.css";
+import { GoogleAnalytics } from '@next/third-parties/google'
 
 // export const metadata: Metadata = {
 //   title: "GOASAYA | Asian Progressive Dining Experience",
@@ -37,6 +38,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <ClientLayout>{children}</ClientLayout>
+      <GoogleAnalytics gaId="G-LB5MBXKJCG" />
+
     </html>
   );
 }
