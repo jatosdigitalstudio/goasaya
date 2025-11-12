@@ -28,31 +28,31 @@ export const EVENTS = [
           <b>IDR 599.000 / pax</b><br/>
           <i>RSVP Only | Limited Seats Available</i>`,
   },
-  {
-  title: "CLAY WORKSHOP AT GOA",
-  subtitle: "Aktif di Goa",
-  slug: "clay-workshop-at-goa",
-  date: "Wednesday, 12 November 2025",
-  time: "14:00 PM",
-  image: "/events/clay-workshop.jpeg",
-  content: "/events/clay-workshop.jpeg",
-  homedesc: `Relax, create, and connect at Goa Saya through our Clay Workshop experience.`,
-  desc: `Join our <b>Clay Workshop at Goa Saya</b> and spend a relaxing afternoon shaping your own pottery in a warm, cave-inspired space.<br/><br/>
+  // {
+  // title: "CLAY WORKSHOP AT GOA",
+  // subtitle: "Aktif di Goa",
+  // slug: "clay-workshop-at-goa",
+  // date: "Wednesday, 12 November 2025",
+  // time: "14:00 PM",
+  // image: "/events/clay-workshop.jpeg",
+  // content: "/events/clay-workshop.jpeg",
+  // homedesc: `Relax, create, and connect at Goa Saya through our Clay Workshop experience.`,
+  // desc: `Join our <b>Clay Workshop at Goa Saya</b> and spend a relaxing afternoon shaping your own pottery in a warm, cave-inspired space.<br/><br/>
   
-          Guided by friendly instructors, this workshop is perfect for beginners and creative souls who want to explore the art of clay making.<br/><br/>
+  //         Guided by friendly instructors, this workshop is perfect for beginners and creative souls who want to explore the art of clay making.<br/><br/>
   
-          Enjoy a <b>complimentary afternoon tea</b> after your session and embrace a moment of calm and creativity.<br/><br/>
+  //         Enjoy a <b>complimentary afternoon tea</b> after your session and embrace a moment of calm and creativity.<br/><br/>
   
-          <b>Workshop Schedule</b><br/>
-          Session 1: 14.00 – 16.00 WIB<br/>
-          Session 2: 16.30 – 18.30 WIB<br/><br/>
+  //         <b>Workshop Schedule</b><br/>
+  //         Session 1: 14.00 – 16.00 WIB<br/>
+  //         Session 2: 16.30 – 18.30 WIB<br/><br/>
   
-          <b>Registration Fee</b><br/>
-          IDR 349.000 / pax<br/>
-          <i>Includes all materials and complimentary afternoon tea</i><br/><br/>
+  //         <b>Registration Fee</b><br/>
+  //         IDR 349.000 / pax<br/>
+  //         <i>Includes all materials and complimentary afternoon tea</i><br/><br/>
   
-          <i>RSVP Only | Limited Seats Available</i>`
-  },
+  //         <i>RSVP Only | Limited Seats Available</i>`
+  // },
   {
     title: "A NIGHT OF CLOUD",
     subtitle: "Shisha Night",
