@@ -18,9 +18,16 @@ export default function SingleEventPage({ event }: EventProps) {
         transition={{ duration: 0.8 }}
         className="max-w-5xl mx-auto"
       >
-        <div className="relative w-full h-[300px] md:h-[400px] overflow-hidden shadow-lg mb-10">
-          <Image
+        <div className="relative w-full h-[200px] md:h-[300px] overflow-hidden rounded-md shadow-lg mb-10">
+          {/* <Image
             src={event.image}
+            alt={event.title}
+            fill
+            className="object-cover"
+            priority
+          /> */}
+           <Image
+            src="/images/goa1.jpg"
             alt={event.title}
             fill
             className="object-cover"
@@ -28,7 +35,7 @@ export default function SingleEventPage({ event }: EventProps) {
           />
           <div className="absolute inset-0 bg-black/85 md:bg-black/75" />
           <div className="absolute bottom-6 left-6 flex flex-col">
-            <h1 className="text-3xl md:text-5xl mb-2 font-style text-white">
+            <h1 className="text-3xl md:text-5xl mb-2 font-style text-white uppercase">
               {event.title}
             </h1>
             <p className="text-white font-semibold">
@@ -50,6 +57,7 @@ export default function SingleEventPage({ event }: EventProps) {
               alt={event.title}
               width={400}
               height={400}
+              className="rounded-md"
             />
             )
           }

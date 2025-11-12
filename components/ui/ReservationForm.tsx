@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 import { useSearchParams } from "next/navigation";
 import { trackEvent } from "@/lib/analytics";
+import { eventNames } from "process";
 
 export default function ReservationForm() {
   const searchParams = useSearchParams();
@@ -33,7 +34,9 @@ export default function ReservationForm() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
 
-     trackEvent(`${eventTracking}`, {
+    console.log({eventTracking})
+    
+    trackEvent(`${eventTracking}`, {
       category: 'Events Tracking',
       label: eventName,
     })

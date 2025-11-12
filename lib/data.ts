@@ -11,7 +11,7 @@ export interface EventType {
 
 export const EVENTS = [
   {
-    title: "BE THE FIRST TO EXPLORE GOA",
+    title: "Be the First to explore GOA",
     subtitle: "Exclusive Dinner",
     tracking: "explore_goa",
     slug: "be-the-first-to-explore-goa",
