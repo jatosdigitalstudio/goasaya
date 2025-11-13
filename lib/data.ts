@@ -30,31 +30,6 @@ export const EVENTS = [
           <b>IDR 599.000 / pax</b><br/>
           <i>RSVP Only | Limited Seats Available</i>`,
   },
-  // {
-  // title: "CLAY WORKSHOP AT GOA",
-  // subtitle: "Aktif di Goa",
-  // slug: "clay-workshop-at-goa",
-  // date: "Wednesday, 12 November 2025",
-  // time: "14:00 PM",
-  // image: "/events/clay-workshop.jpeg",
-  // content: "/events/clay-workshop.jpeg",
-  // homedesc: `Relax, create, and connect at Goa Saya through our Clay Workshop experience.`,
-  // desc: `Join our <b>Clay Workshop at Goa Saya</b> and spend a relaxing afternoon shaping your own pottery in a warm, cave-inspired space.<br/><br/>
-  
-  //         Guided by friendly instructors, this workshop is perfect for beginners and creative souls who want to explore the art of clay making.<br/><br/>
-  
-  //         Enjoy a <b>complimentary afternoon tea</b> after your session and embrace a moment of calm and creativity.<br/><br/>
-  
-  //         <b>Workshop Schedule</b><br/>
-  //         Session 1: 14.00 – 16.00 WIB<br/>
-  //         Session 2: 16.30 – 18.30 WIB<br/><br/>
-  
-  //         <b>Registration Fee</b><br/>
-  //         IDR 349.000 / pax<br/>
-  //         <i>Includes all materials and complimentary afternoon tea</i><br/><br/>
-  
-  //         <i>RSVP Only | Limited Seats Available</i>`
-  // },
   {
     title: "CAVE PARTY AT GOA",
     subtitle: "Music & Vibes",
@@ -67,15 +42,15 @@ export const EVENTS = [
     homedesc: `A night of music, lights, and energy inside the iconic cave of Goa Saya.`,
     desc: `Get ready for an unforgettable <b>Cave Party at Goa Saya</b> — a night filled with lights, beats, and the best crowd in town.<br/><br/>
 
-          Enjoy an exclusive live performance by <b>Nuel Ante</b> and collect your <b>3 complimentary shots</b> at our bar.<br/><br/>
+          Enjoy an exclusive live performance by <b>DJ Nuel Ante</b>. <br/><br/>
 
-          Immerse yourself in the rhythm, the energy, and the unique cave atmosphere that only Goa Saya can offer.<br/><br/>
+          <b>Special Offer:</b> Grab your <b>Cave Set Menu</b> and enjoy <b>3 Tequila Shots</b><br/><br/>
 
           <b>Event Details</b><br/>
           Date: Friday, 14 November 2025<br/>
           Time: Start from 21.00 WIB<br/><br/>
 
-          <i> Limited Spots Available</i>`
+          <i>Limited Spots Available</i>`
 },
   {
     title: "ARABIAN NIGHT AT GOA",
@@ -95,19 +70,7 @@ export const EVENTS = [
           Date: Thursday, 20 November 2025<br/>
           Time: Start from 18.00 WIB<br/><br/>
 
+          <b>Set Menu - IDR 599.000 / pax</b><br/>
           <i>RSVP Only | Limited Spots Available</i>`
   },
-  // {
-  //   title: "THE JAZZ AFFAIR",
-  //   subtitle: "",
-  //   tracking: "jazz_affair",
-  //   slug: "the-jazz-affair",
-  //   date: "Saturday, 15 November 2025",
-  //   time: "From 18:00",
-  //   image: "/events/cave.JPG",
-  //   homedesc: `A sophisticated night of smooth jazz and timeless elegance. 
-  //   Let live melodies fill the cavern’s heart as you enjoy curated dishes and fine wines. The perfect harmony of sound, flavor, and ambiance.`,
-  //   desc: `A sophisticated night of smooth jazz and timeless elegance. 
-  //   Let live melodies fill the cavern’s heart as you enjoy curated dishes and fine wines. The perfect harmony of sound, flavor, and ambiance.`,
-  // },
 ];

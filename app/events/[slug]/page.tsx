@@ -25,7 +25,7 @@ export async function generateMetadata({
     description: event.desc,
     openGraph: {
       title: `${event.title} | GoaSaya`,
-      description: event.desc,
+      description: event.homedesc,
       images: [
         {
           url: `${baseUrl}${event.content}`,
@@ -60,7 +60,7 @@ export default async function SingleEvent({
 
   return (
     <>
-        <SingleEventPage event={event as EventType}/>
+      <SingleEventPage event={event as EventType}/>
     </>
   );
 }
