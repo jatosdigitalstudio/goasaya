@@ -22,7 +22,7 @@ export async function generateMetadata({
 
   return {
     title: `${event.title} | GoaSaya Events`,
-    description: event.desc,
+    description: event.homedesc,
     openGraph: {
       title: `${event.title} | GoaSaya`,
       description: event.homedesc,
@@ -38,7 +38,7 @@ export async function generateMetadata({
     twitter: {
       card: "summary_large_image",
       title: `${event.title} | GoaSaya`,
-      description: event.desc,
+      description: event.homedesc,
       images: [`${baseUrl}${event.content}`],
     },
   };
