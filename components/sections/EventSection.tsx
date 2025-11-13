@@ -52,7 +52,7 @@ export default function EventsSection() {
                 }`}
             >
                 <Link href={`/events/${event.slug}`} className="w-full group">
-                    <div className="relative w-full h-[420px] overflow-hidden">
+                    <div className="relative w-full h-[420px] rounded-sm overflow-hidden">
                         <Image
                             src={event.image}
                             alt={event.title}

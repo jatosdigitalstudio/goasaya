@@ -10,3 +10,5 @@ export const trackEvent = (action: string, params?: Record<string, any>) => {
     window.gtag('event', action, params)
   }
 }
+
+

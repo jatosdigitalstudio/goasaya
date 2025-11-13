@@ -21,6 +21,7 @@ const WhatsappButton = () => {
     >
       <motion.button
         aria-label="Contact via WhatsApp"
+        type="button"
         onClick={handleReserve}
         className="flex justify-center items-center cursor-pointer"
       >

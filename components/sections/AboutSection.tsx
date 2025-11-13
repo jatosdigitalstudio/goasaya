@@ -34,7 +34,7 @@ export default function AboutSection() {
               alt="Goasaya Ambience"
               width={400}
               height={500}
-              className=" shadow-lg object-cover"
+              className="rounded-sm shadow-lg object-cover"
             />
           </motion.div>
 
@@ -87,14 +87,14 @@ export default function AboutSection() {
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.8, delay: i * 0.2 }}
                   viewport={{ once: true }}
-                  className="relative h-[350px] w-full overflow-hidden "
+                  className="relative  h-[350px] w-full overflow-hidden "
                 >
                   <Image
                     src={src}
                     alt={`Restaurant image ${i + 1}`}
                     fill
                     sizes="(max-width: 768px) 100vw, 33vw"
-                    className="object-cover"
+                    className="object-cover rounded-sm"
                   />
                 </motion.div>
               ))}

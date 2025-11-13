@@ -56,42 +56,58 @@ export const EVENTS = [
   //         <i>RSVP Only | Limited Seats Available</i>`
   // },
   {
-    title: "Arabian Night at Goa",
-    subtitle: "Shisha Night",
-    tracking: "arabian_night",
-    slug: "a-night-of-cloud-shisha-night",
-    date: "Thursday, 13 November 2025",
-    time: "From 19:00",
-    image: "/events/shisha2.JPG",
-    homedesc: `Sink into an ethereal evening surrounded by ambient lights, soft beats, and the rich aroma of premium shisha. 
-    Let the clouds swirl as you enjoy crafted cocktails and soulful lounge tunes. Experience of calm indulgence beneath the cave glow.`,
-    desc: `Sink into an ethereal evening surrounded by ambient lights, soft beats, and the rich aroma of premium shisha. 
-    Let the clouds swirl as you enjoy crafted cocktails and soulful lounge tunes. Experience of calm indulgence beneath the cave glow.`,
-  },
-  {
-    title: "CAVE PARTY",
-    subtitle: "DJ Session",
+    title: "CAVE PARTY AT GOA",
+    subtitle: "Music & Vibes",
     tracking: "cave_party",
-    slug: "cave-party-dj-session",
+    slug: "cave-party-at-goa",
     date: "Friday, 14 November 2025",
-    time: "From 19:00",
-    image: "/events/party.jpg",
-    homedesc: `Lose yourself in the rhythm of the cave. Our resident DJs bring a night of high energy and deep grooves
-    blending house, techno, and tribal beats in a one-of-a-kind underground atmosphere. Dance, drink, and celebrate the night.`,
-    desc: `Lose yourself in the rhythm of the cave. Our resident DJs bring a night of high energy and deep grooves
-    blending house, techno, and tribal beats in a one-of-a-kind underground atmosphere. Dance, drink, and celebrate the night.`,
-  },
+    time: "Start from 21.00 WIB",
+    image: "/events/cave-party.jpeg",
+    content: "/events/cave-party.jpeg",
+    homedesc: `A night of music, lights, and energy inside the iconic cave of Goa Saya.`,
+    desc: `Get ready for an unforgettable <b>Cave Party at Goa Saya</b> — a night filled with lights, beats, and the best crowd in town.<br/><br/>
+
+          Enjoy an exclusive live performance by <b>Nuel Ante</b> and collect your <b>3 complimentary shots</b> at our bar.<br/><br/>
+
+          Immerse yourself in the rhythm, the energy, and the unique cave atmosphere that only Goa Saya can offer.<br/><br/>
+
+          <b>Event Details</b><br/>
+          Date: Friday, 14 November 2025<br/>
+          Time: Start from 21.00 WIB<br/><br/>
+
+          <i>RSVP Only | Limited Spots Available</i>`
+},
   {
-    title: "THE JAZZ AFFAIR",
-    subtitle: "",
-    tracking: "jazz_affair",
-    slug: "the-jazz-affair",
-    date: "Saturday, 15 November 2025",
-    time: "From 18:00",
-    image: "/events/cave.JPG",
-    homedesc: `A sophisticated night of smooth jazz and timeless elegance. 
-    Let live melodies fill the cavern’s heart as you enjoy curated dishes and fine wines. The perfect harmony of sound, flavor, and ambiance.`,
-    desc: `A sophisticated night of smooth jazz and timeless elegance. 
-    Let live melodies fill the cavern’s heart as you enjoy curated dishes and fine wines. The perfect harmony of sound, flavor, and ambiance.`,
+    title: "ARABIAN NIGHT AT GOA",
+    subtitle: "Shisha & Warm Lights",
+    tracking: "arabian_night",
+    slug: "arabian-night-at-goa",
+    date: "Thursday, 20 November 2025",
+    time: "Start from 18.00 WIB",
+    image: "/events/arabian-night.jpg",
+    content: "/events/arabian-night.jpg",
+    homedesc: `Step into an intimate night of shisha, warm lights, and cozy ambience inside Goa Saya.`,
+    desc: `Experience an enchanting <b>Arabian Night at Goa Saya</b> — an evening of shisha, soft lights, and warm desert-inspired ambience.<br/><br/>
+
+          Relax and unwind as you enjoy the charm of our cave-style venue filled with glowing lights and calming music.<br/><br/>
+
+          <b>Event Details</b><br/>
+          Date: Thursday, 20 November 2025<br/>
+          Time: Start from 18.00 WIB<br/><br/>
+
+          <i>RSVP Only | Limited Seats Available</i>`
   },
+  // {
+  //   title: "THE JAZZ AFFAIR",
+  //   subtitle: "",
+  //   tracking: "jazz_affair",
+  //   slug: "the-jazz-affair",
+  //   date: "Saturday, 15 November 2025",
+  //   time: "From 18:00",
+  //   image: "/events/cave.JPG",
+  //   homedesc: `A sophisticated night of smooth jazz and timeless elegance. 
+  //   Let live melodies fill the cavern’s heart as you enjoy curated dishes and fine wines. The perfect harmony of sound, flavor, and ambiance.`,
+  //   desc: `A sophisticated night of smooth jazz and timeless elegance. 
+  //   Let live melodies fill the cavern’s heart as you enjoy curated dishes and fine wines. The perfect harmony of sound, flavor, and ambiance.`,
+  // },
 ];

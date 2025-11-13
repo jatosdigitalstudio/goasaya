@@ -52,8 +52,7 @@ export default function EventsPage() {
                 </p>
             </motion.div>
         </div>
-         <div className="px-6 md:px-16 py-12 md:py-32">
-
+         <div className="px-6 md:px-16 py-12 md:py-20">
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10 md:gap-14">
             {EVENTS.slice(0, visibleCount).map((event, idx) => (
                 <motion.div
@@ -67,7 +66,7 @@ export default function EventsPage() {
                         stiffness: 60,
                     }}
                     viewport={{ once: true }}
-                    className="group relative overflow-hidden bg-black "
+                    className="group relative overflow-hidden bg-black rounded-md"
                     >
                         <div className="relative w-full h-[320px]">
                             <Image
@@ -76,18 +75,26 @@ export default function EventsPage() {
                             fill
                             className="object-cover transition-transform duration-700"
                             />
-                            <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
-                        <div className="absolute bottom-6 left-6 text-left">
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent" />
+                        {/* <div className="absolute bottom-6 left-6 text-left">
                             <h3 className="text-2xl font-style text-white drop-shadow-md">
                                 {event.title}
                             </h3>
                             <p className="text-white/70 text-sm mt-1 font-text">
                                 {event.date} 
                             </p>
-                        </div>
+                        </div> */}
                     </div>
 
                 <div className="p-6">
+                    <div className="text-left mb-4">
+                        <h3 className="text-2xl font-style text-white drop-shadow-md">
+                            {event.title}
+                        </h3>
+                        <p className="text-white/70 text-sm mt-1 font-text">
+                            {event.date} 
+                        </p>
+                    </div>
                     <p className="text-white/80 text-sm font-text line-clamp-3 mb-4">
                         {event.homedesc}
                     </p>
