@@ -75,7 +75,7 @@ export const EVENTS = [
           Date: Friday, 14 November 2025<br/>
           Time: Start from 21.00 WIB<br/><br/>
 
-          <i>RSVP Only | Limited Spots Available</i>`
+          <i> Limited Spots Available</i>`
 },
   {
     title: "ARABIAN NIGHT AT GOA",
@@ -95,7 +95,7 @@ export const EVENTS = [
           Date: Thursday, 20 November 2025<br/>
           Time: Start from 18.00 WIB<br/><br/>
 
-          <i>RSVP Only | Limited Seats Available</i>`
+          <i>RSVP Only | Limited Spots Available</i>`
   },
   // {
   //   title: "THE JAZZ AFFAIR",
