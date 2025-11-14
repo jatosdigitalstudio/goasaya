@@ -89,7 +89,7 @@ export default function FirstVisitModal() {
         initial={{ opacity: 0, scale: 0.85 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.35, ease: "easeOut" }}
-        className="relative w-full max-w-lg rounded-3xl overflow-hidden shadow-2xl"
+        className="relative w-full max-w-lg rounded-xl overflow-hidden shadow-2xl"
       >
         <div className="relative h-[460px] w-full">
           <Image
@@ -100,8 +100,8 @@ export default function FirstVisitModal() {
           />
           <div className="absolute inset-0 bg-black/90" />
 
-          <div className="absolute inset-0 flex flex-col justify-center items-center text-center px-10">
-            <h2 className="text-white font-style text-2xl md:text-3xl font-style mb-4">
+          <div className="absolute inset-0 flex flex-col justify-center items-center text-center py-4 px-8 md:px-14">
+            {/* <h2 className="text-white font-style text-2xl md:text-3xl font-style mb-4">
               Dear Valued Guests
             </h2>
 
@@ -116,11 +116,22 @@ export default function FirstVisitModal() {
 
             <p className="text-white text-sm md:text-base italic mb-8">
               With Love, <br /> GoaSaya Family.
+            </p> */}
+
+            <h2 className="text-white font-style text-3xl md:text-2xl font-style mb-4 uppercase">
+              We are under maintenance
+            </h2>
+
+            <p className="text-white/90 font-text text-sm md:text-base leading-relaxed mb-6">
+              Temporarily closed on <strong>15th - 16th November</strong> {" "}
+              as we refresh and refine our space. <br /><br/> 
+
+              We look forward to welcoming you back <br /> on  <strong className="text-orangecream"> 17th November</strong>.
             </p>
 
             <button
               onClick={() => setIsOpen(false)}
-              className="w-full py-3 bg-white text-black rounded-xl text-sm md:text-base font-medium hover:bg-cream transition"
+              className="absolute bottom-6  px-6 py-2 bg-white text-black rounded-xl text-sm md:text-base font-medium hover:bg-cream transition"
             >
               Close
             </button>
