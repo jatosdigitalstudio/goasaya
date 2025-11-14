@@ -3,6 +3,22 @@ import ClientLayout from "./client-layout";
 import "@/styles/globals.css";
 import { GoogleAnalytics } from '@next/third-parties/google'
 
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  return (
+    <html lang="en">
+      <body>
+        <ClientLayout>{children}</ClientLayout>
+        <GoogleAnalytics gaId="G-LB5MBXKJCG" />
+      </body>
+    </html>
+  );
+}
+
+
 // export const metadata: Metadata = {
 //   title: "GOASAYA | Asian Progressive Dining Experience",
 //   description:"Discovered the flavors of adventures at cave, where grilled dishes, unique drinks, and cozy cave vibes come together in one unforgetables experience",
@@ -29,17 +45,3 @@ import { GoogleAnalytics } from '@next/third-parties/google'
 //     images: ["/logo/09.jpg"],
 //   },
 // };
-
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
-  return (
-    <html lang="en">
-      <ClientLayout>{children}</ClientLayout>
-      <GoogleAnalytics gaId="G-LB5MBXKJCG" />
-
-    </html>
-  );
-}

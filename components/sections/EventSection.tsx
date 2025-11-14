@@ -17,7 +17,6 @@ export default function EventsSection() {
                 transition={{ duration: 0.8 }}
                 className="text-maroon text-4xl md:text-6xl uppercase font-style leading-tight max-w-2xl"
             >
-                {/* Discover Experiences Beyond Dining */}
                 Where Memories Take Shape
             </motion.h1>
 
@@ -89,7 +88,6 @@ export default function EventsSection() {
 
                 <div className="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors"></div>
 
-                {/* Text Content */}
                 <Link href="/events" className="relative z-10 flex flex-col items-center">
                     <h3 className="text-xl font-style mb-4">Explore More Events</h3>
                 </Link>
