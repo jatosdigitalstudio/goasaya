@@ -91,34 +91,23 @@ export default function FirstVisitModal() {
         transition={{ duration: 0.35, ease: "easeOut" }}
         className="relative w-full max-w-lg rounded-3xl overflow-hidden shadow-2xl"
       >
-        {/* Background Image Inside Modal */}
         <div className="relative h-[460px] w-full">
           <Image
-            src="/images/goa1.jpg" // replace this with your image
+            src="/images/goa1.jpg"
             alt="GoaSaya Popup Background"
             fill
             className="object-cover"
           />
-
-          {/* Overlay inside modal */}
           <div className="absolute inset-0 bg-black/90" />
 
-          {/* <button
-            onClick={() => setIsOpen(false)}
-            className="absolute top-4 right-4 text-white hover:text-red-300 transition"
-          >
-            <X size={28} />
-          </button> */}
-
-          {/* CONTENT */}
-          <div className="absolute inset-0 flex flex-col justify-center items-center text-center px-8">
+          <div className="absolute inset-0 flex flex-col justify-center items-center text-center px-10">
             <h2 className="text-white font-style text-2xl md:text-3xl font-style mb-4">
               Dear Valued Guests
             </h2>
 
             <p className="text-white/90 font-text text-sm md:text-base leading-relaxed mb-6">
-              We will be temporarily closed from <strong>15th - 16th November</strong> 
-              as we take a moment to refresh and refine our space. This short pause 
+              We will be temporarily closed from <strong>15th - 16th November</strong> {" "}
+              as we take a moment to refresh and refine our space. <br /><br /> This short pause 
               allows us to return with the warmth, comfort and experience you’ve come to love.
               <br /><br />
               Thank you for your understanding, we can’t wait to welcome you back on 
