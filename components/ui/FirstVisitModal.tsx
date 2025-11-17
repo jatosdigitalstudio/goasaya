@@ -71,16 +71,19 @@
 //     </div>
 //   );
 // }
+
 "use client";
 
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { X } from "lucide-react";
+// import { X } from "lucide-react";
 import Image from "next/image";
+import { EVENTS } from "@/lib/data";
 
 export default function FirstVisitModal() {
   const [isOpen, setIsOpen] = useState(true);
 
+  console.log(EVENTS)
   if (!isOpen) return null;
 
   return (
@@ -91,34 +94,17 @@ export default function FirstVisitModal() {
         transition={{ duration: 0.35, ease: "easeOut" }}
         className="relative w-full max-w-lg rounded-xl overflow-hidden shadow-2xl"
       >
-        <div className="relative h-[460px] w-full">
+        <div className="relative h-[700px] w-full">
           <Image
-            src="/images/goa1.jpg"
+            src="/events/arabian-night.jpg"
             alt="GoaSaya Popup Background"
             fill
             className="object-cover"
           />
-          <div className="absolute inset-0 bg-black/90" />
+          <div className="absolute inset-0 bg-black/10" />
 
           <div className="absolute inset-0 flex flex-col justify-center items-center text-center py-4 px-8 md:px-14">
-            {/* <h2 className="text-white font-style text-2xl md:text-3xl font-style mb-4">
-              Dear Valued Guests
-            </h2>
-
-            <p className="text-white/90 font-text text-sm md:text-base leading-relaxed mb-6">
-              We will be temporarily closed from <strong>15th - 16th November</strong> {" "}
-              as we take a moment to refresh and refine our space. <br /><br /> This short pause 
-              allows us to return with the warmth, comfort and experience you’ve come to love.
-              <br /><br />
-              Thank you for your understanding, we can’t wait to welcome you back on 
-              <strong> 17th November</strong>.
-            </p>
-
-            <p className="text-white text-sm md:text-base italic mb-8">
-              With Love, <br /> GoaSaya Family.
-            </p> */}
-
-            <h2 className="text-white font-style text-3xl md:text-2xl font-style mb-4 uppercase">
+            {/* <h2 className="text-white font-style text-3xl md:text-2xl font-style mb-4 uppercase">
               We are under maintenance
             </h2>
 
@@ -127,7 +113,7 @@ export default function FirstVisitModal() {
               as we refresh and refine our space. <br /><br/> 
 
               We look forward to welcoming you back <br /> on  <strong className="text-orangecream"> 17th November</strong>.
-            </p>
+            </p> */}
 
             <button
               onClick={() => setIsOpen(false)}

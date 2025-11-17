@@ -27,63 +27,18 @@ export const menuData: MenuCategory[] = [
   {
     name: "To Share",
     items: [
-      {
-        title: "Boneless Wings",
-        description: "Open flame smokiness, bold flavor without the mess.",
-        price: "195.000 / 3 pcs",
-        image: "/share-boneless-wings.jpg"
-      },
-      {
-        title: "Calamari Fritter",
-        description: "Crispy fritters with tender squid inside.",
-        price: "168.000",
-        image: "/share-calamari-fritter.jpg"
-      },
-      {
-        title: "Truffle Fries",
-        description: "Sweet potato or potato — your choice.",
-        price: "120.000",
-        image: "/share-truffle-fries.jpg"
-      },
-      {
-        title: "Oxtail Soup",
-        description: "Slow braised Indonesian oxtail soup.",
-        price: "282.000",
-        image: "/share-oxtail-soup.jpg"
-      },
-      {
-        title: "Iga Kecombrang",
-        description: "Tender braised & grilled kecombrang ribs.",
-        price: "255.000",
-        image: "/share-iga-kecombrang.jpg"
-      },
-      {
-        title: "Layers by Layers",
-        description: "Elegant potato crafted like a gold bar.",
-        price: "170.000",
-        image: "/share-layers.jpg"
-      },
-      {
-        title: "Smokey Toast",
-        description: "Chicken, scrambled egg, salad — American style.",
-        price: "120.000",
-        image: "/share-smokey-toast.jpg"
-      },
-      {
-        title: "Nordic Bite",
-        description: "A crisp, modern taste of the North.",
-        price: "250.000",
-        image: "/share-nordic-bite.jpg"
-      },
-      {
-        title: "Soft Shell Crab",
-        description: "Crispy soft shell crab with rich salted egg sauce.",
-        price: "235.000",
-        image: "/share-soft-shell-crab.jpg"
-      },
-      { title: "Caesar Salad", description: "Romaine with creamy Caesar dressing.", price: "175.000", image: "/mains-caesar-salad.jpg" },
-      { title: "Goa Salad", description: "Light, sweet, zesty citrus salad.", price: "160.000", image: "/mains-goa-salad.jpg" },
+      { title: "Truffle Fries", description: "Sweet potato or potato — your choice.", price: "120.000", image: "/share-truffle-fries.jpg" },
+      { title: "Smokey Toast", description: "Chicken, scrambled egg, salad — American style.", price: "120.000", image: "/share-smokey-toast.jpg" },
+      { title: "Layers by Layers", description: "Elegant potato crafted like a gold bar.", price: "170.000", image: "/share-layers.jpg" },
+      { title: "Boneless Wings", description: "Open flame smokiness, bold flavor without the mess.", price: "195.000 / 3 pcs", image: "/share-boneless-wings.jpg" },
+      { title: "Nordic Bite", description: "A crisp, modern taste of the North.", price: "250.000", image: "/share-nordic-bite.jpg" },
+      { title: "Calamari Fritter", description: "Crispy fritters with tender squid inside.", price: "168.000", image: "/share-calamari-fritter.jpg" },
+      { title: "Soft Shell Crab", description: "Crispy soft shell crab with rich salted egg sauce.", price: "235.000", image: "/share-soft-shell-crab.jpg" },
+      { title: "Iga Kecombrang", description: "Tender braised & grilled kecombrang ribs.", price: "255.000", image: "/share-iga-kecombrang.jpg" },
+      { title: "Oxtail Soup", description: "Slow braised Indonesian oxtail soup.", price: "282.000", image: "/share-oxtail-soup.jpg" },
       { title: "Thai Beef Salad", description: "Grilled beef, herbs, Thai citrus dressing.", price: "142.000", image: "/mains-thai-beef-salad.jpg" },
+      { title: "Goa Salad", description: "Light, sweet, zesty citrus salad.", price: "160.000", image: "/mains-goa-salad.jpg" },
+      { title: "Caesar Salad", description: "Romaine with creamy Caesar dressing.", price: "175.000", image: "/mains-caesar-salad.jpg" },
     ]
   },
 
@@ -91,21 +46,21 @@ export const menuData: MenuCategory[] = [
   {
     name: "Mains",
     items: [
-      { title: "Coastal Aglio Olio", description: "Ocean-fresh spaghetti with white wine.", price: "245.000", image: "/mains-aglio-olio.jpg" },
-      { title: "Capellini A La Vodka", description: "Blue shrimp, tomato vodka sauce.", price: "249.000", image: "/mains-capellini.jpg" },
       { title: "The Italian Goa", description: "Deconstructed pasta seasoned by you.", price: "168.000", image: "/mains-italian-goa.jpg" },
       { title: "Creamy Chicken Pasta", description: "Velvety cream pasta with grilled chicken.", price: "170.000", image: "/mains-creamy-chicken-pasta.jpg" },
       { title: "Seafood Marinara", description: "Rich marinara with fresh seafood.", price: "230.000", image: "/mains-seafood-marinara.jpg" },
-      { title: "Beef Burger", description: "Goa patty, Australian style, with fries.", price: "270.000", image: "/mains-beef-burger.jpg" },
+      { title: "Coastal Aglio Olio", description: "Ocean-fresh spaghetti with white wine.", price: "245.000", image: "/mains-aglio-olio.jpg" },
+      { title: "Capellini A La Vodka", description: "Blue shrimp, tomato vodka sauce.", price: "249.000", image: "/mains-capellini.jpg" },
       { title: "Duck Confit", description: "Slow cooked duck on mashed potato.", price: "295.000", image: "/mains-duck-confit.jpg" },
-      { title: "Black Cod", description: "Caviar gin beurre blanc.", price: "185.000", image: "/mains-black-cod.jpg" },
-      { title: "Lemon Butter Salmon", description: "Seared salmon with lemon butter.", price: "270.000", image: "/mains-lemon-butter-salmon.jpg" },
-      { title: "Aromatic Grilled Chicken Rice", description: "Herb grilled chicken over warm rice.", price: "199.000", image: "/mains-aromatic-rice.jpg" },
-      { title: "Minang Fried Rice", description: "Spiced Minang rice with beef tongue.", price: "210.000", image: "/mains-minang-rice.jpg" },
-      { title: "Beef Cheek 18 Hours", description: "Melt-in-mouth slow cooked beef cheek.", price: "288.000", image: "/mains-beef-cheek.jpg" },
+      { title: "Smoked Duck with Red Wine Sauce", description: "Smoked duck with rich wine sauce.", price: "289.000", image: "/mains-smoked-duck.jpg" },
       { title: "Duck Collagen Soba", description: "Soba served with smoked duck.", price: "230.000", image: "/mains-duck-soba.jpg" },
+      { title: "Lemon Butter Salmon", description: "Seared salmon with lemon butter.", price: "270.000", image: "/mains-lemon-butter-salmon.jpg" },
+      { title: "Black Cod", description: "Caviar gin beurre blanc.", price: "185.000", image: "/mains-black-cod.jpg" },
+      { title: "Beef Burger", description: "Goa patty, Australian style, with fries.", price: "270.000", image: "/mains-beef-burger.jpg" },
+      { title: "Beef Cheek 18 Hours", description: "Melt-in-mouth slow cooked beef cheek.", price: "288.000", image: "/mains-beef-cheek.jpg" },
       { title: "The Goa Steak", description: "6 sauces & potato pillows.", price: "999.000", image: "/mains-goa-steak.jpg" },
-      { title: "Smoked Duck with Red Wine Sauce", description: "Smoked duck with rich wine sauce.", price: "289.000", image: "/mains-smoked-duck.jpg" }
+      { title: "Minang Fried Rice", description: "Spiced Minang rice with beef tongue.", price: "210.000", image: "/mains-minang-rice.jpg" },
+      { title: "Aromatic Grilled Chicken Rice", description: "Herb grilled chicken over warm rice.", price: "199.000", image: "/mains-aromatic-rice.jpg" },
     ]
   },
 

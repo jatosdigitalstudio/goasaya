@@ -176,6 +176,7 @@
 import { useState, useRef, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { menuData } from "@/lib/menu-data";
+import Image from "next/image";
 
 export default function MenuPage() {
   const [active, setActive] = useState(menuData[0].name);
@@ -184,24 +185,31 @@ export default function MenuPage() {
     const sectionRefs = useRef<Record<string, HTMLDivElement | null>>(
     Object.fromEntries(menuData.map((c) => [c.name, null]))
     );
+
   useEffect(() => {
     const el = sectionRefs.current[active];
     if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
   }, [active]);
 
-  const activeClass =
-    "relative bg-white/10 ring-1 ring-white/20 transition-all duration-300";
-
+  const activeClass = "relative bg-white/10 ring-1 ring-white/20 transition-all duration-300";
   const inactiveClass = "hover:bg-white/5 transition-all duration-300";
 
   return (
-    <section className="min-h-screen bg-neutral-900 text-white container mx-auto px-6 md:px-20 py-24 md:py-32">
-      <div className="flex flex-col md:flex-row gap-2 md:gap-16">
-
-        {/* SIDEBAR */}
+    <section className="relative min-h-screen text-white container mx-auto px-6 md:px-20 py-24 md:py-32">
+        <div className="absolute inset-0 -z-10">
+            <Image
+                src="/images/goa1.jpg" 
+                alt="GOASAYA Background"
+                fill
+                className="object-cover"
+                priority
+            />
+            <div className="absolute inset-0 bg-black/90" />
+        </div>
+        <div className="flex flex-col md:flex-row gap-2 md:gap-16">
+        
         <aside className="w-full md:w-64 md:sticky md:top-24 self-start">
 
-          {/* MOBILE ACCORDION */}
           <div className="md:hidden mb-6">
             <motion.details
               ref={detailsRef}
@@ -231,7 +239,6 @@ export default function MenuPage() {
             </motion.details>
           </div>
 
-          {/* DESKTOP SIDEBAR */}
           <div className="hidden md:block bg-black/40 p-6 rounded-2xl border border-white/5">
             <h1 className="text-2xl font-style font-light mb-6 tracking-wide">
               GOASAYA Menu
@@ -261,7 +268,6 @@ export default function MenuPage() {
           </div>
         </aside>
 
-        {/* MENU CONTENT */}
         <div className="flex-1">
           <AnimatePresence mode="wait">
             {menuData
@@ -278,12 +284,10 @@ export default function MenuPage() {
                   transition={{ duration: 0.4 }}
                   className="space-y-10"
                 >
-                  {/* Category Title */}
                   <h2 className="text-4xl font-light tracking-wide">
                     {category.name}
                   </h2>
 
-                  {/* Items */}
                   <div className="space-y-8">
                     {category.items.map((item) => (
                       <motion.div
