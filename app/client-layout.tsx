@@ -7,7 +7,7 @@ import Footer from "@/components/layout/Footer";
 import Loading from "./loading";
 import ScrollToTop from "@/components/ui/ScrollToTop";
 import WhatsappButton from "@/components/ui/WhatsappButton";
-import FirstVisitModal from "@/components/ui/FirstVisitModal";
+// import FirstVisitModal from "@/components/ui/FirstVisitModal";
 
 const textFont = Inria_Serif({
   variable: "--font-text",
@@ -41,7 +41,7 @@ export default function ClientLayout({
           <Header />
           <ScrollToTop />
           <WhatsappButton />
-          <FirstVisitModal/>
+          {/* <FirstVisitModal/> */}
           <main>{children}</main>
           <Footer />
         </>
