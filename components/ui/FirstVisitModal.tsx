@@ -74,16 +74,32 @@
 
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 // import { X } from "lucide-react";
 import Image from "next/image";
-import { EVENTS } from "@/lib/data";
+import Link from "next/link";
+import { EVENTS, highlightedEventId} from "@/lib/data";
 
 export default function FirstVisitModal() {
   const [isOpen, setIsOpen] = useState(true);
+  const highlightedEvent = EVENTS.find((e) => e.id === highlightedEventId);
+  if (!highlightedEvent) return null;
+  const [hasTracked, setHasTracked] = useState(false);
+  
+  useEffect(() => {
+    let locked = false;
+    const hasVisited = localStorage.getItem("goasaya_first_visit");
+    if (!hasVisited && !locked) {
+      locked = true;
+      setIsOpen(true);
+      if (!hasTracked && typeof window !== "undefined") {
+        setHasTracked(true);
+        localStorage.setItem("goasaya_first_visit", "true");
+      }
+    }
+  }, [hasTracked]);
 
-  console.log(EVENTS)
   if (!isOpen) return null;
 
   return (
@@ -96,8 +112,9 @@ export default function FirstVisitModal() {
       >
         <div className="relative h-[700px] w-full">
           <Image
-            src="/events/arabian-night.jpg"
-            alt="GoaSaya Popup Background"
+            // src="/events/arabian-night.jpg"
+            src={highlightedEvent.image}
+            alt={highlightedEvent.title}
             fill
             className="object-cover"
           />
@@ -115,12 +132,21 @@ export default function FirstVisitModal() {
               We look forward to welcoming you back <br /> on  <strong className="text-orangecream"> 17th November</strong>.
             </p> */}
 
-            <button
-              onClick={() => setIsOpen(false)}
-              className="absolute bottom-6  px-6 py-2 bg-white text-black rounded-xl text-sm md:text-base font-medium hover:bg-cream transition"
-            >
-              Close
-            </button>
+            <div className="absolute bottom-6  flex flex-row gap-8">
+              <button
+                onClick={() => setIsOpen(false)}
+                className=" px-6 py-2 bg-white text-black rounded-xl text-sm md:text-base font-medium hover:bg-cream transition"
+              >
+                Close
+              </button>
+              <button 
+                onClick={() => setIsOpen(false)}
+                className="px-6 py-2 bg-white text-black rounded-xl text-sm md:text-base font-medium hover:bg-cream transition">
+                <Link href={`/events/${highlightedEvent.slug}`}>
+                  <h3>See Event</h3>
+                </Link>
+              </button>
+            </div>
           </div>
         </div>
       </motion.div>

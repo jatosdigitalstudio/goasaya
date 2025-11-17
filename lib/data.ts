@@ -1,4 +1,5 @@
 export interface EventType {
+  id: number;
   title: string;
   slug: string;
   tracking: string;
@@ -9,8 +10,12 @@ export interface EventType {
   desc: string;
 }
 
+export const highlightedEventId = 3; 
+
+
 export const EVENTS = [
   {
+    id: 1,
     title: "Be the First to explore GOA",
     subtitle: "Exclusive Dinner",
     tracking: "explore_goa",
@@ -31,6 +36,7 @@ export const EVENTS = [
           <i>RSVP Only | Limited Seats Available</i>`,
   },
   {
+    id: 2,
     title: "CAVE PARTY AT GOA",
     subtitle: "Music & Vibes",
     tracking: "cave_party",
@@ -53,6 +59,7 @@ export const EVENTS = [
           <i>Limited Spots Available</i>`
 },
   {
+    id: 3,
     title: "ARABIAN NIGHT AT GOA",
     subtitle: "Shisha & Warm Lights",
     tracking: "arabian_night",

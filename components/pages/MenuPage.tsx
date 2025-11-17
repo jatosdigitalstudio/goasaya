@@ -195,7 +195,7 @@ export default function MenuPage() {
   const inactiveClass = "hover:bg-white/5 transition-all duration-300";
 
   return (
-    <section className="relative min-h-screen text-white container mx-auto px-6 md:px-20 py-24 md:py-32">
+    <section className="relative min-h-screen text-white mx-auto px-6 md:px-20 py-24 md:py-32">
         <div className="absolute inset-0 -z-10">
             <Image
                 src="/images/goa1.jpg" 
