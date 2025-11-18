@@ -59,9 +59,9 @@ export default function EventsSection() {
                             className="object-cover duration-700 brightness-90"
                         />
                     </div>
-                    <h3 className="mt-6 text-xl font-semibold font-style uppercase">
+                    <h1 className="mt-6 text-xl font-semibold font-style uppercase">
                         {event.title}
-                    </h3>
+                    </h1>
                     <h3 className="text-lg font-regular font-text">
                         {event.subtitle}
                     </h3>

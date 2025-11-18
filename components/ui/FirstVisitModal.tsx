@@ -138,13 +138,16 @@ export default function FirstVisitModal() {
               >
                 Close
               </button>
-              <button 
+              <Link
+                href={`/events/${highlightedEvent.slug}`}
+                role="button"
                 onClick={() => setIsOpen(false)}
-                className="px-6 py-2 bg-white text-black rounded-xl text-sm md:text-base font-medium hover:bg-cream transition">
-                <Link href={`/events/${highlightedEvent.slug}`}>
-                  <h3>See Event</h3>
-                </Link>
-              </button>
+                className="inline-flex items-center justify-center px-6 py-3 
+                          bg-white text-black rounded-xl text-sm md:text-base font-medium
+                          hover:bg-cream transition"
+              >
+                See Event
+              </Link>
             </div>
           </div>
         </div>
