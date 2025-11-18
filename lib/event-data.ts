@@ -77,7 +77,7 @@ export const EVENTS = [
           Date: Thursday, 20 November 2025<br/>
           Time: Start from 18.00 WIB<br/><br/>
 
-          <b>IDR 259.000 / Hookah Pipe</b><br/>
+          <b>IDR 599.000 / Hookah Pipe</b><br/>
           <i>RSVP Only | Limited Spots Available</i>`
   },
 ];
