@@ -72,82 +72,159 @@
 //   );
 // }
 
+// "use client";
+
+// import { useState, useEffect } from "react";
+// import { motion } from "framer-motion";
+// // import { X } from "lucide-react";
+// import Image from "next/image";
+// import Link from "next/link";
+// import { EVENTS, highlightedEventId} from "@/lib/event-data";
+
+// export default function FirstVisitModal() {
+//   const [isOpen, setIsOpen] = useState(true);
+//   const highlightedEvent = EVENTS.find((e) => e.id === highlightedEventId);
+//   if (!highlightedEvent) return null;
+//   const [hasTracked, setHasTracked] = useState(false);
+  
+//   useEffect(() => {
+//     let locked = false;
+//     const hasVisited = localStorage.getItem("goasaya_first_visit");
+//     if (!hasVisited && !locked) {
+//       locked = true;
+//       setIsOpen(true);
+//       if (!hasTracked && typeof window !== "undefined") {
+//         setHasTracked(true);
+//         localStorage.setItem("goasaya_first_visit", "true");
+//       }
+//     }
+//   }, [hasTracked]);
+
+//   if (!isOpen) return null;
+
+//   return (
+//     <div className="fixed inset-0 z-[9999] flex justify-center items-center bg-black/60 backdrop-blur-sm p-4">
+//       <motion.div
+//         initial={{ opacity: 0, scale: 0.85 }}
+//         animate={{ opacity: 1, scale: 1 }}
+//         transition={{ duration: 0.35, ease: "easeOut" }}
+//         className="relative w-full max-w-lg rounded-xl overflow-hidden shadow-2xl"
+//       >
+//         <div className="relative h-[700px] w-full">
+//           <Image
+//             src={highlightedEvent.image}
+//             alt={highlightedEvent.title}
+//             fill
+//             className="object-cover"
+//           />
+//           <div className="absolute inset-0 bg-black/10" />
+
+//           <div className="absolute inset-0 flex flex-col justify-center items-center text-center py-4 px-8 md:px-14">
+//             <div className="absolute bottom-6 flex flex-row gap-4">
+//               <button
+//                 onClick={() => setIsOpen(false)}
+//                 className=" px-6 py-2 bg-white text-black rounded-xl cursor-pointer text-sm md:text-base font-medium hover:bg-cream transition"
+//               >
+//                 Close
+//               </button>
+//               <Link
+//                 href={`/events/${highlightedEvent.slug}`}
+//                 role="button"
+//                 onClick={() => setIsOpen(false)}
+//                 className="inline-flex items-center justify-center px-6 py-3 
+//                           bg-white text-black rounded-xl text-sm md:text-base font-medium
+//                           hover:bg-cream transition"
+//                 >
+//                 See Event
+//               </Link>
+//             </div>
+//           </div>
+//         </div>
+//       </motion.div>
+//     </div>
+//   );
+// }
+
 "use client";
 
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-// import { X } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import { EVENTS, highlightedEventId} from "@/lib/event-data";
+import { EVENTS, highlightedEventId } from "@/lib/event-data";
 
 export default function FirstVisitModal() {
-  const [isOpen, setIsOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
+  const [mounted, setMounted] = useState(false);
+  const [hasTracked, setHasTracked] = useState(false);
+
   const highlightedEvent = EVENTS.find((e) => e.id === highlightedEventId);
   if (!highlightedEvent) return null;
-  const [hasTracked, setHasTracked] = useState(false);
-  
-  useEffect(() => {
-    let locked = false;
-    const hasVisited = localStorage.getItem("goasaya_first_visit");
-    if (!hasVisited && !locked) {
-      locked = true;
-      setIsOpen(true);
-      if (!hasTracked && typeof window !== "undefined") {
-        setHasTracked(true);
-        localStorage.setItem("goasaya_first_visit", "true");
-      }
-    }
-  }, [hasTracked]);
 
-  if (!isOpen) return null;
+  // Delay modal mount so it cannot affect LCP
+  useEffect(() => {
+    const t = setTimeout(() => setMounted(true), 400);
+    return () => clearTimeout(t);
+  }, []);
+
+  useEffect(() => {
+    if (!mounted) return;
+
+    const hasVisited = localStorage.getItem("goasaya_first_visit");
+
+    if (!hasVisited) {
+      setIsOpen(true);
+      localStorage.setItem("goasaya_first_visit", "true");
+    }
+  }, [mounted]);
+
+  if (!mounted || !isOpen) return null;
 
   return (
-    <div className="fixed inset-0 z-[9999] flex justify-center items-center bg-black/60 backdrop-blur-sm p-4">
+    <div className="fixed inset-0 z-[9999] flex justify-center items-center bg-black/60 backdrop-blur-sm p-4 will-change-opacity">
       <motion.div
         initial={{ opacity: 0, scale: 0.85 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.35, ease: "easeOut" }}
-        className="relative w-full max-w-lg rounded-xl overflow-hidden shadow-2xl"
+        className="relative w-full max-w-lg rounded-xl overflow-hidden shadow-2xl will-change-transform"
       >
         <div className="relative h-[700px] w-full">
+
           <Image
-            // src="/events/arabian-night.jpg"
             src={highlightedEvent.image}
             alt={highlightedEvent.title}
-            fill
-            className="object-cover"
+            width={1200}
+            height={1600}
+            loading="lazy"
+            priority={false}
+            fetchPriority="low"
+            className="w-full h-full object-cover"
           />
+
           <div className="absolute inset-0 bg-black/10" />
 
           <div className="absolute inset-0 flex flex-col justify-center items-center text-center py-4 px-8 md:px-14">
-            {/* <h2 className="text-white font-style text-3xl md:text-2xl font-style mb-4 uppercase">
-              We are under maintenance
-            </h2>
-
-            <p className="text-white/90 font-text text-sm md:text-base leading-relaxed mb-6">
-              Temporarily closed on <strong>15th - 16th November</strong> {" "}
-              as we refresh and refine our space. <br /><br/> 
-
-              We look forward to welcoming you back <br /> on  <strong className="text-orangecream"> 17th November</strong>.
-            </p> */}
             <div className="absolute bottom-6 flex flex-row gap-4">
+              
               <button
                 onClick={() => setIsOpen(false)}
-                className=" px-6 py-2 bg-white text-black rounded-xl cursor-pointer text-sm md:text-base font-medium hover:bg-cream transition"
+                className="px-6 py-2 bg-white text-black rounded-xl cursor-pointer 
+                           text-sm md:text-base font-medium hover:bg-cream transition"
               >
                 Close
               </button>
+
               <Link
                 href={`/events/${highlightedEvent.slug}`}
                 role="button"
                 onClick={() => setIsOpen(false)}
-                className="inline-flex items-center justify-center px-6 py-3 
-                          bg-white text-black rounded-xl text-sm md:text-base font-medium
-                          hover:bg-cream transition"
+                className="inline-flex items-center justify-center px-6 py-2
+                           bg-white text-black rounded-xl text-sm md:text-base 
+                           font-medium hover:bg-cream transition"
               >
                 See Event
               </Link>
+
             </div>
           </div>
         </div>
