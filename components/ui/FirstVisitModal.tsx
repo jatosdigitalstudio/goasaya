@@ -161,7 +161,6 @@ export default function FirstVisitModal() {
   const highlightedEvent = EVENTS.find((e) => e.id === highlightedEventId);
   if (!highlightedEvent) return null;
 
-  // Delay modal mount so it cannot affect LCP
   useEffect(() => {
     const t = setTimeout(() => setMounted(true), 400);
     return () => clearTimeout(t);
@@ -188,13 +187,12 @@ export default function FirstVisitModal() {
         transition={{ duration: 0.35, ease: "easeOut" }}
         className="relative w-full max-w-lg rounded-xl overflow-hidden shadow-2xl will-change-transform"
       >
-        <div className="relative h-[700px] w-full">
-
+        <div className="relative mx-auto h-[400px] w-[300px]">
           <Image
             src={highlightedEvent.image}
             alt={highlightedEvent.title}
-            width={1200}
-            height={1600}
+            width={300}
+            height={400}
             loading="lazy"
             priority={false}
             fetchPriority="low"
