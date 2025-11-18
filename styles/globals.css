@@ -14,3 +14,7 @@ html {
   scroll-behavior: smooth;
   background-color: var(--color-cream);
 }
+
+#menu-page{
+  margin-top: 0;
+}

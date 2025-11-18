@@ -27,7 +27,7 @@ export default function Header() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: idx * 0.1, duration: 0.4 }}
             >
-              <Link href={link.href} className=" font-style text-white">
+              <Link href={link.href} className="font-style text-white" scroll>
                 {link.name}
               </Link>
             </motion.div>
