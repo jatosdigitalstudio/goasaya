@@ -185,47 +185,44 @@ export default function FirstVisitModal() {
         initial={{ opacity: 0, scale: 0.85 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.35, ease: "easeOut" }}
-        className="relative w-full max-w-lg rounded-xl overflow-hidden shadow-2xl will-change-transform"
+        className="relative rounded-lg overflow-hidden shadow-2xl will-change-transform"
       >
-        <div className="relative mx-auto h-[400px] w-[300px]">
+        <div className="relative mx-auto h-[360px] w-[280px] rounded-xl md:h-[400px] md:w-[320px]">
           <Image
             src={highlightedEvent.image}
             alt={highlightedEvent.title}
-            width={300}
-            height={400}
+            width={280}
+            height={360}
             loading="lazy"
             priority={false}
             fetchPriority="low"
+            quality={70}
+            sizes="(max-width: 768px) 80vw, 280px"
             className="w-full h-full object-cover"
           />
 
           <div className="absolute inset-0 bg-black/10" />
 
-          <div className="absolute inset-0 flex flex-col justify-center items-center text-center py-4 px-8 md:px-14">
-            <div className="absolute bottom-6 flex flex-row gap-4">
-              
+          <div className="absolute inset-0 flex flex-col justify-end items-center pb-5">
+            <div className="flex flex-row gap-3 w-full px-4">
               <button
                 onClick={() => setIsOpen(false)}
-                className="px-6 py-2 bg-white text-black rounded-xl cursor-pointer 
-                           text-sm md:text-base font-medium hover:bg-cream transition"
+                className="flex-1 px-4 py-2 cursor-pointer border border-white text-white backdrop-blur-xs rounded-xl text-sm font-medium transition"
               >
                 Close
               </button>
 
               <Link
                 href={`/events/${highlightedEvent.slug}`}
-                role="button"
                 onClick={() => setIsOpen(false)}
-                className="inline-flex items-center justify-center px-6 py-2
-                           bg-white text-black rounded-xl text-sm md:text-base 
-                           font-medium hover:bg-cream transition"
+                className="flex-1 inline-flex items-center justify-center px-4 py-2 bg-white text-black rounded-xl text-sm font-medium hover:bg-neutral-200 transition"
               >
                 See Event
               </Link>
-
             </div>
           </div>
         </div>
+
       </motion.div>
     </div>
   );
