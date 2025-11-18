@@ -69,7 +69,7 @@ export const EVENTS = [
     image: "/events/arabian-night.jpg",
     content: "/events/arabian-night.jpg",
     homedesc: `Step into an intimate night of shisha, warm lights, and cozy ambience inside Goa Saya.`,
-    desc: `Experience an enchanting <b>Arabian Night at Goa Saya</b> — an evening of shisha, soft lights, and warm desert-inspired ambience.<br/><br/>
+    desc: `Experience an enchanting <b>Arabian Night at GoaSaya</b> — an evening of shisha, soft lights, and warm desert-inspired ambience.<br/><br/>
 
           Relax and unwind as you enjoy the charm of our cave-style venue filled with glowing lights and calming music.<br/><br/>
 
@@ -77,7 +77,7 @@ export const EVENTS = [
           Date: Thursday, 20 November 2025<br/>
           Time: Start from 18.00 WIB<br/><br/>
 
-          <b>Set Menu - IDR 599.000 / pax</b><br/>
+          <b>IDR 259.000 / Hookah Pipe</b><br/>
           <i>RSVP Only | Limited Spots Available</i>`
   },
 ];

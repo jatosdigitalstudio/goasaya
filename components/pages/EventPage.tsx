@@ -4,7 +4,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
-import { EVENTS } from "@/lib/data";
+import { EVENTS } from "@/lib/event-data";
 import CTASection from "../sections/CTASection";
 
 const ITEMS_PER_PAGE = 6;

@@ -181,6 +181,21 @@ import Image from "next/image";
 export default function MenuPage() {
   const [active, setActive] = useState(menuData[0].name);
 
+   const beverageNames = [
+  "Coffee",
+  "Non Coffee",
+  "Matcha Series (Hot/Iced)",
+  "Signature Cocktails",
+  "Classic Cocktails",
+  "Mocktails",
+  "Tea by TWG",
+  "Flavour Tea",
+  "Healthy Juice",
+];
+
+const beverageStartIndex = menuData.findIndex((cat) =>
+  beverageNames.includes(cat.name)
+);
   const detailsRef = useRef<HTMLDetailsElement>(null);
     const sectionRefs = useRef<Record<string, HTMLDivElement | null>>(
     Object.fromEntries(menuData.map((c) => [c.name, null]))
@@ -209,7 +224,6 @@ export default function MenuPage() {
         <div className="flex flex-col md:flex-row gap-2 md:gap-16">
         
         <aside className="w-full md:w-64 md:sticky md:top-24 self-start">
-
           <div className="md:hidden mb-6">
             <motion.details
               ref={detailsRef}
@@ -221,7 +235,13 @@ export default function MenuPage() {
               </summary>
 
               <div className="mt-4 space-y-1">
-                {menuData.map((cat) => (
+                {menuData.map((cat,index) => (
+                <div key={cat.name}>
+                    {index === beverageStartIndex && (
+                        <div className="my-4 border-t border-white/20 pt-4 text-white text-xs tracking-widest">
+                            BEVERAGES
+                        </div>
+                    )}
                   <button
                     key={cat.name}
                     onClick={() => {
@@ -234,6 +254,7 @@ export default function MenuPage() {
                   >
                     {cat.name}
                   </button>
+                  </div>
                 ))}
               </div>
             </motion.details>
@@ -245,24 +266,30 @@ export default function MenuPage() {
             </h1>
 
             <nav className="space-y-2 relative">
-              {menuData.map((cat) => (
-                <motion.button
-                  key={cat.name}
-                  onClick={() => setActive(cat.name)}
-                  className={`w-full text-left py-2 px-3 rounded-lg font-medium relative ${
-                    cat.name === active ? activeClass : inactiveClass
-                  }`}
-                >
-                  {cat.name}
+              {menuData.map((cat, index) => (
+                <div key={cat.name}>
+                    {index === beverageStartIndex && (
+                        <div className="my-4 border-t border-white/20 pt-4 text-white/40 text-xs tracking-widest">
+                            BEVERAGES
+                        </div>
+                    )}
+                    <motion.button
+                    onClick={() => setActive(cat.name)}
+                    className={`w-full text-left py-2 px-3 rounded-lg font-medium relative ${
+                        cat.name === active ? activeClass : inactiveClass
+                    }`}
+                    >
+                    {cat.name}
 
-                  {cat.name === active && (
-                    <motion.div
-                      layoutId="highlight"
-                      transition={{ type: "spring", stiffness: 200, damping: 18 }}
-                      className="absolute inset-0 bg-white/10 rounded-lg -z-10"
-                    />
-                  )}
-                </motion.button>
+                    {cat.name === active && (
+                        <motion.div
+                        layoutId="highlight"
+                        transition={{ type: "spring", stiffness: 200, damping: 18 }}
+                        className="absolute inset-0 bg-white/10 rounded-lg -z-10"
+                        />
+                    )}
+                    </motion.button>
+                </div>
               ))}
             </nav>
           </div>
@@ -284,7 +311,7 @@ export default function MenuPage() {
                   transition={{ duration: 0.4 }}
                   className="space-y-10"
                 >
-                  <h2 className="text-4xl font-light tracking-wide">
+                  <h2 className="text-4xl uppercase font-style font-light tracking-wide">
                     {category.name}
                   </h2>
 
@@ -299,7 +326,7 @@ export default function MenuPage() {
                         className="border-b border-white/10 pb-6"
                       >
                         <div className="flex justify-between items-start mb-2">
-                          <h3 className="text-xl font-medium tracking-wide">
+                          <h3 className="text-xl font-medium uppercase tracking-wide">
                             {item.title}
                           </h3>
                           <span className="font-semibold whitespace-nowrap">

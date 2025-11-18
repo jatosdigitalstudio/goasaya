@@ -8,6 +8,7 @@ export interface MenuItem {
 export interface MenuCategory {
   name: string;
   items: MenuItem[];
+  isBeverage?: boolean;
 }
 
 export const menuData: MenuCategory[] = [
@@ -27,18 +28,18 @@ export const menuData: MenuCategory[] = [
   {
     name: "To Share",
     items: [
-      { title: "Truffle Fries", description: "Sweet potato or potato — your choice.", price: "120.000", image: "/share-truffle-fries.jpg" },
-      { title: "Smokey Toast", description: "Chicken, scrambled egg, salad — American style.", price: "120.000", image: "/share-smokey-toast.jpg" },
-      { title: "Layers by Layers", description: "Elegant potato crafted like a gold bar.", price: "170.000", image: "/share-layers.jpg" },
-      { title: "Boneless Wings", description: "Open flame smokiness, bold flavor without the mess.", price: "195.000 / 3 pcs", image: "/share-boneless-wings.jpg" },
-      { title: "Nordic Bite", description: "A crisp, modern taste of the North.", price: "250.000", image: "/share-nordic-bite.jpg" },
-      { title: "Calamari Fritter", description: "Crispy fritters with tender squid inside.", price: "168.000", image: "/share-calamari-fritter.jpg" },
-      { title: "Soft Shell Crab", description: "Crispy soft shell crab with rich salted egg sauce.", price: "235.000", image: "/share-soft-shell-crab.jpg" },
+      { title: "Truffle Fries", description: "Sweet potato or just potato. Your Choice.", price: "120.000", image: "/share-truffle-fries.jpg" },
+      { title: "Smokey Toast", description: "Your All Included American Style. Tender Chicken, Scrambled Egg and Salad. ", price: "120.000", image: "/share-smokey-toast.jpg" },
+      { title: "Layers by Layers", description: "Its Elegant, Just Like a Gold Bar, But Potato. ", price: "170.000", image: "/share-layers.jpg" },
+      { title: "Boneless Wings", description: "An Open Flame Natural Smokiness, Offering All The Bold Flavor Without The Mess.", price: "195.000 / 3 pcs", image: "/share-boneless-wings.jpg" },
+      { title: "Nordic Bite", description: "Experience a Crisp, Modern Taste of The North In Every Carefully Crafted Bite.", price: "250.000", image: "/share-nordic-bite.jpg" },
+      { title: "Calamari Fritter", description: "Crispy Calamari Fritters With Tender Squid Inside and a Light, Golden Crunch Outside. ", price: "168.000", image: "/share-calamari-fritter.jpg" },
+      { title: "Soft Shell Crab", description: "Crispy Soft Shell Crab Coated in Rich, Creamy Salted Egg Sauce with a Perfect Balance of Savory and Aromatic Notes.", price: "235.000", image: "/share-soft-shell-crab.jpg" },
       { title: "Iga Kecombrang", description: "Tender braised & grilled kecombrang ribs.", price: "255.000", image: "/share-iga-kecombrang.jpg" },
       { title: "Oxtail Soup", description: "Slow braised Indonesian oxtail soup.", price: "282.000", image: "/share-oxtail-soup.jpg" },
-      { title: "Thai Beef Salad", description: "Grilled beef, herbs, Thai citrus dressing.", price: "142.000", image: "/mains-thai-beef-salad.jpg" },
-      { title: "Goa Salad", description: "Light, sweet, zesty citrus salad.", price: "160.000", image: "/mains-goa-salad.jpg" },
-      { title: "Caesar Salad", description: "Romaine with creamy Caesar dressing.", price: "175.000", image: "/mains-caesar-salad.jpg" },
+      { title: "Thai Beef Salad", description: "Tender Grilled Beef Tossed with Fresh Herbs, Crunchy Vegetables, and a Bright Thai-Inspired Citrus Dressing.", price: "142.000", image: "/mains-thai-beef-salad.jpg" },
+      { title: "Goa Salad", description: "Light, Sweet and Zesty. Crisp Salad with a Refreshing Citrus Dressing.", price: "160.000", image: "/mains-goa-salad.jpg" },
+      { title: "Caesar Salad", description: "Romaine Topped with Creamy Caesar Dressing with a Hint of Anchovy. ", price: "175.000", image: "/mains-caesar-salad.jpg" },
     ]
   },
 
@@ -47,20 +48,20 @@ export const menuData: MenuCategory[] = [
     name: "Mains",
     items: [
       { title: "The Italian Goa", description: "Deconstructed pasta seasoned by you.", price: "168.000", image: "/mains-italian-goa.jpg" },
-      { title: "Creamy Chicken Pasta", description: "Velvety cream pasta with grilled chicken.", price: "170.000", image: "/mains-creamy-chicken-pasta.jpg" },
-      { title: "Seafood Marinara", description: "Rich marinara with fresh seafood.", price: "230.000", image: "/mains-seafood-marinara.jpg" },
-      { title: "Coastal Aglio Olio", description: "Ocean-fresh spaghetti with white wine.", price: "245.000", image: "/mains-aglio-olio.jpg" },
-      { title: "Capellini A La Vodka", description: "Blue shrimp, tomato vodka sauce.", price: "249.000", image: "/mains-capellini.jpg" },
-      { title: "Duck Confit", description: "Slow cooked duck on mashed potato.", price: "295.000", image: "/mains-duck-confit.jpg" },
-      { title: "Smoked Duck with Red Wine Sauce", description: "Smoked duck with rich wine sauce.", price: "289.000", image: "/mains-smoked-duck.jpg" },
-      { title: "Duck Collagen Soba", description: "Soba served with smoked duck.", price: "230.000", image: "/mains-duck-soba.jpg" },
-      { title: "Lemon Butter Salmon", description: "Seared salmon with lemon butter.", price: "270.000", image: "/mains-lemon-butter-salmon.jpg" },
-      { title: "Black Cod", description: "Caviar gin beurre blanc.", price: "185.000", image: "/mains-black-cod.jpg" },
-      { title: "Beef Burger", description: "Goa patty, Australian style, with fries.", price: "270.000", image: "/mains-beef-burger.jpg" },
-      { title: "Beef Cheek 18 Hours", description: "Melt-in-mouth slow cooked beef cheek.", price: "288.000", image: "/mains-beef-cheek.jpg" },
-      { title: "The Goa Steak", description: "6 sauces & potato pillows.", price: "999.000", image: "/mains-goa-steak.jpg" },
-      { title: "Minang Fried Rice", description: "Spiced Minang rice with beef tongue.", price: "210.000", image: "/mains-minang-rice.jpg" },
-      { title: "Aromatic Grilled Chicken Rice", description: "Herb grilled chicken over warm rice.", price: "199.000", image: "/mains-aromatic-rice.jpg" },
+      { title: "Creamy Chicken Pasta", description: "Al Dente Pasta in a Velvety Cream Sauce, with Grilled Chicken and a Touch of Herbs.", price: "170.000", image: "/mains-creamy-chicken-pasta.jpg" },
+      { title: "Seafood Marinara", description: "Al Dente Pasta Tossed in Rich Marinara Sauce, Topped with Fresh Seafood for a Bright and Hearty Italian Classic.", price: "230.000", image: "/mains-seafood-marinara.jpg" },
+      { title: "Coastal Aglio Olio", description: "Al Dente Spagetthi, Ocean-Fresh, Infused with White Wine and Parmasan.", price: "245.000", image: "/mains-aglio-olio.jpg" },
+      { title: "Capellini A La Vodka", description: "Giant Blue Shrimp on Top. Tomato Vodka Sauce. Feather Light Pasta. ", price: "249.000", image: "/mains-capellini.jpg" },
+      { title: "Duck Confit", description: "Slow Cooked to Perfection on Top of Mashed Potato with Jus and Herbs.", price: "295.000", image: "/mains-duck-confit.jpg" },
+      { title: "Smoked Duck with Red Wine Sauce", description: "Tender Smoked Duck Served with a Rich Red Wine Sauce, Blending Deep Savory Notes with a Silky, Aromatic Finish.", price: "289.000", image: "/mains-smoked-duck.jpg" },
+      { title: "Duck Collagen Soba", description: "Served with Smoked Duck. ", price: "230.000", image: "/mains-duck-soba.jpg" },
+      { title: "Lemon Butter Salmon", description: "Tender, Perfectly Seared Salmon Fillet Drizzled with a Fragrant Lemon-Butter Sauce. ", price: "270.000", image: "/mains-lemon-butter-salmon.jpg" },
+      { title: "Black Cod", description: "Foie Grass of The Sea Served With Caviar Gin Beurre Blanc.", price: "185.000", image: "/mains-black-cod.jpg" },
+      { title: "Beef Burger", description: "Goa Made Patty, Cooked to Your Liking. Australian Style. Comes with Fries. ", price: "270.000", image: "/mains-beef-burger.jpg" },
+      { title: "Beef Cheek 18 Hours", description: "Slow-Cooked for 18 Hours, This Tender Beef Delivers Deep, Rich Flavors with a Melt-In-Your-Mouth Finish.", price: "288.000", image: "/mains-beef-cheek.jpg" },
+      { title: "The Goa Steak", description: "Prepared Upon Your Request, 6 Sauce and Potato Pillows on The Side. ", price: "999.000", image: "/mains-goa-steak.jpg" },
+      { title: "Minang Fried Rice", description: "Fragrant Bold Spiced Minang Inspired with Braised Beef Tongue. ", price: "210.000", image: "/mains-minang-rice.jpg" },
+      { title: "Aromatic Grilled Chicken Rice", description: "Fragrant Grilled Chicken Served Over Warm Rice, Infused With Herbs and a Touch of Smokiness. ", price: "199.000", image: "/mains-aromatic-rice.jpg" },
     ]
   },
 
@@ -68,13 +69,13 @@ export const menuData: MenuCategory[] = [
   {
     name: "Whole Cakes",
     items: [
-      { title: "Carrot Cake", description: "Moist spiced carrot cake.", price: "300.000", image: "/whole-carrot.jpg" },
-      { title: "Goa Golden Cake", description: "Vanilla sponge with burnt meringue.", price: "400.000", image: "/whole-golden.jpg" },
-      { title: "Bumble Bee", description: "Milk chocolate mousse + banana caramel.", price: "400.000", image: "/whole-bumblebee.jpg" },
-      { title: "Lady Whisper", description: "Oolong chiffon + melon.", price: "500.000", image: "/whole-ladywhisper.jpg" },
-      { title: "Manjari Chocolate Cake", description: "Valrhona dark chocolate.", price: "900.000", image: "/whole-manjari.jpg" },
-      { title: "Mango & Coconut Cake", description: "Tropical mousse layers.", price: "400.000", image: "/whole-mango-coconut.jpg" },
-      { title: "Ube Basque Burnt Cheesecake", description: "Purple ube cheesecake.", price: "700.000", image: "/whole-ube.jpg" }
+      { title: "Carrot Cake", description: "Moist Spiced Carrot Cake with Walnut, Raisin and Citrus Cheese Frosting.", price: "300.000", image: "/whole-carrot.jpg" },
+      { title: "Goa Golden Cake", description: "Vanilla Sponge Layer with Vanilla Cream Coated and Burnt Italian Meringue.", price: "400.000", image: "/whole-golden.jpg" },
+      { title: "Bumble Bee", description: "Creamy Milk Chocolate Mousse with Fluffy Chocolate Sponge, Banana Caramel and Banana Cream Custard.", price: "400.000", image: "/whole-bumblebee.jpg" },
+      { title: "Lady Whisper", description: "Fluffy Oolong Chiffon Layer with Oolong Ganache, Fresh Melon, Melon Cream and Melon Jelly. ", price: "500.000", image: "/whole-ladywhisper.jpg" },
+      { title: "Mango & Coconut Cake", description: "Tropical Mousse Cake Layer White Mango Coconut Mousse and Mango Compote. ", price: "400.000", image: "/whole-mango-coconut.jpg" },
+      { title: "Ube Basque Burnt Cheesecake", description: "Classic Burnt Cheesecake White Purple Ube, Creamy Inside and Caramelized on The Outside.", price: "700.000", image: "/whole-ube.jpg" },
+      { title: "Manjari Chocolate Cake", description: "Valrhona Manjari Dark Chocolate Mousse, Layer with Passion Fruit, Hazelnut Feuilletine and Flourless Sponge Cake.", price: "900.000", image: "/whole-manjari.jpg" },
     ]
   },
 
@@ -82,11 +83,11 @@ export const menuData: MenuCategory[] = [
   {
     name: "Slice Cakes",
     items: [
-      { title: "Ube Basque Burnt Cheesecake", description: "Creamy ube cheesecake.", price: "75.000", image: "/slice-ube.jpg" },
-      { title: "Carrot Cake", description: "Carrot, walnut, citrus frosting.", price: "65.000", image: "/slice-carrot.jpg" },
-      { title: "Bolu Jadul", description: "Classic Indonesian cake.", price: "50.000", image: "/slice-bolu.jpg" },
-      { title: "Banana Bread Chocochips & Pecan", description: "Banana cake with pecan & ganache.", price: "65.000", image: "/slice-banana.jpg" },
-      { title: "Chocolate Fudge Brownie", description: "Dense, moist chocolate.", price: "70.000", image: "/slice-brownie.jpg" }
+      { title: "Bolu Jadul", description: "Classic Indonesian Style Pound Cake Layer with Mocca Butter Cream and Chocolate Rice Sprinkle.", price: "50.000", image: "/slice-bolu.jpg" },
+      { title: "Carrot Cake", description: "Moist Spiced Carrot Cake with Walnut, Raisin and Citrus Cheese Frosting.", price: "65.000", image: "/slice-carrot.jpg" },
+      { title: "Banana Bread Chocochips & Pecan", description: "Soft Banana Cake with Pecan Nut and Chocolate Chips Topped with Sour Cream Frosting. ", price: "65.000", image: "/slice-banana.jpg" },
+      { title: "Chocolate Fudge Brownie", description: "Dense, Moist and Fudgy Texture Chocoalte Cake Top with Cadbury and Cashew Nuts.", price: "70.000", image: "/slice-brownie.jpg" },
+      { title: "Ube Basque Burnt Cheesecake", description: "Classic Burnt Cheesecake with Purple Ube, Creamy Inside and Caramelized on The Outisde.", price: "75.000", image: "/slice-ube.jpg" },
     ]
   },
 
@@ -119,6 +120,7 @@ export const menuData: MenuCategory[] = [
   // ------------------ COFFEE ------------------
   {
     name: "Coffee",
+    isBeverage: true,
     items: [
       { title: "Espresso", description: "", price: "55.000", image: "/bev-tea.jpg" },
       { title: "Picolo", description: "", price: "55.000", image: "/bev-milktea.jpg" },
@@ -132,6 +134,7 @@ export const menuData: MenuCategory[] = [
   // ------------------ NON COFFEE ------------------
   {
     name: "Non Coffee",
+    isBeverage: true,
     items: [
       { title: "Chocolate", description: "(Hot/Iced)", price: "55.000", image: "/bev-milktea.jpg" },
       { title: "Cookies and Cream Frappe", description: "", price: "65.000", image: "/bev-water.jpg" },
@@ -142,6 +145,7 @@ export const menuData: MenuCategory[] = [
   // ------------------ Matcha Series ------------------
   {
     name: "Matcha Series (Hot/Iced)",
+    isBeverage: true,
     items: [
       { title: "Artisan Matcha", description: "Matcha & Fresh Milk.", price: "65.000", image: "/bev-water.jpg" },
       { title: "Banana Matcha Latte", description: "Matcha Original, Banana & Oat Milk.", price: "65.000", image: "/bev-water.jpg" },
@@ -153,6 +157,7 @@ export const menuData: MenuCategory[] = [
   // ------------------ SIGNATURE COCKTAILS ------------------
   {
     name: "Signature Cocktails",
+    isBeverage: true,
     items: [
       { title: "Pink Sakura", description: "Dry Gin, Orange Liqueur, Cordial Sakura & Foamer.", price: "135.000", image: "/cocktail-goasunset.jpg" },
       { title: "Holiday's Inn", description: "Gold Whisky, Irish Cream, Coffee Liqueur, Cold Brew.", price: "145.000", image: "/cocktail-midnight.jpg" },
@@ -170,6 +175,7 @@ export const menuData: MenuCategory[] = [
   // ------------------ CLASSIC COCKTAILS ------------------
   {
     name: "Classic Cocktails",
+    isBeverage: true,
     items: [
       { title: "Lychee Martini", description: "Martini with Gin & lychee liqueur.", price: "130.000", image: "/classic-negroni.jpg" },
       { title: "Margarita", description: "Mix of Tequila, Triple Sec & Citrus.", price: "135.000", image: "/classic-oldfashioned.jpg" },
@@ -182,6 +188,7 @@ export const menuData: MenuCategory[] = [
   // ------------------ MOCKTAILS ------------------
   {
     name: "Mocktails",
+    isBeverage: true,
     items: [
       { title: "Autumn Spice", description: "Cranberry, Orange, Green Apple & Ginger Soda.", price: "120.000", image: "/mock-berry.jpg" },
       { title: "Blue Ocean", description: "Curacao, Pineapple, Coconut Water & Citrus.", price: "120.000", image: "/mock-citrus.jpg" },
@@ -193,6 +200,7 @@ export const menuData: MenuCategory[] = [
   // ------------------ TEA & HEALTHY JUICE ------------------
   {
     name: "Tea by TWG",
+    isBeverage: true,
     items: [
       { title: "Moroccan Mint Tea", description: "", price: "45.000", image: "/juice-green.jpg" },
       { title: "Chamomile Tea", description: "", price: "45.000", image: "/juice-cleanse.jpg" },
@@ -204,6 +212,7 @@ export const menuData: MenuCategory[] = [
   },
   {
     name: "Flavour Tea",
+    isBeverage: true,
     items: [
       { title: "Ice Tea", description: "", price: "35.000", image: "/juice-green.jpg" },
       { title: "Lemon Tea", description: "", price: "45.000", image: "/juice-cleanse.jpg" },
@@ -213,6 +222,7 @@ export const menuData: MenuCategory[] = [
   },
   {
     name: "Healthy Juice",
+    isBeverage: true,
     items: [
       { title: "Energy Booster", description: "Orange, Carrot & Ginger.", price: "60.000", image: "/juice-green.jpg" },
       { title: "Green Detox", description: "Green Pokcoy, Pineapple, Kyuri & Citrus.", price: "60.000", image: "/juice-cleanse.jpg" },

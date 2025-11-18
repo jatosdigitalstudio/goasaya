@@ -79,7 +79,7 @@ import { motion } from "framer-motion";
 // import { X } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import { EVENTS, highlightedEventId} from "@/lib/data";
+import { EVENTS, highlightedEventId} from "@/lib/event-data";
 
 export default function FirstVisitModal() {
   const [isOpen, setIsOpen] = useState(true);
@@ -131,11 +131,10 @@ export default function FirstVisitModal() {
 
               We look forward to welcoming you back <br /> on  <strong className="text-orangecream"> 17th November</strong>.
             </p> */}
-
-            <div className="absolute bottom-6  flex flex-row gap-8">
+            <div className="absolute bottom-6 flex flex-row gap-4">
               <button
                 onClick={() => setIsOpen(false)}
-                className=" px-6 py-2 bg-white text-black rounded-xl text-sm md:text-base font-medium hover:bg-cream transition"
+                className=" px-6 py-2 bg-white text-black rounded-xl cursor-pointer text-sm md:text-base font-medium hover:bg-cream transition"
               >
                 Close
               </button>

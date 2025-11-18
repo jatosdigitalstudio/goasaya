@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
-import { EVENTS, EventType } from "@/lib/data";
+import { EVENTS, EventType } from "@/lib/event-data";
 import SingleEventPage from "@/components/pages/SingleEventPage";
 
 const baseUrl = "https://goasaya.com";
