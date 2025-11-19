@@ -66,8 +66,8 @@ export const EVENTS = [
     slug: "arabian-night-at-goa",
     date: "Thursday, 20 November 2025",
     time: "Start from 18.00 WIB",
-    image: "/events/arabian-night.jpg",
-    content: "/events/arabian-night.jpg",
+    image: "/events/arabian-night.jpeg",
+    content: "/events/arabian-night.jpeg",
     homedesc: `Step into an intimate night of shisha, warm lights, and cozy ambience inside Goa Saya.`,
     desc: `Experience an enchanting <b>Arabian Night at GoaSaya</b> — an evening of shisha, soft lights, and warm desert-inspired ambience.<br/><br/>
 
