@@ -12,7 +12,6 @@ export interface EventType {
 
 export const highlightedEventId = 3; 
 
-
 export const EVENTS = [
   {
     id: 1,
