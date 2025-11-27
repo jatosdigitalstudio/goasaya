@@ -40,7 +40,7 @@ export default function ClientLayout({
         <>
           <Header />
           <ScrollToTop />
-          <WhatsappButton />
+          {/* <WhatsappButton /> */}
           {/* <FirstVisitModal/> */}
           <main>{children}</main>
           <Footer />
